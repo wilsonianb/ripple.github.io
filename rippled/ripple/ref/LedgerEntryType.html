@@ -1,0 +1,127 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>LedgerEntryType</title>
+<link rel="stylesheet" href="../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../index.html" title="Ripple">
+<link rel="up" href="../ref.html" title="Reference">
+<link rel="prev" href="KnownFormats__Item/operator_lt__lt_.html" title="KnownFormats::Item::operator&lt;&lt;">
+<link rel="next" href="LedgerFormats.html" title="LedgerFormats">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table cellpadding="2" width="100%"><tr><td valign="top"><img alt="Ripple Logo" width="300" height="80" src="../../images/logo.png"></td></tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="KnownFormats__Item/operator_lt__lt_.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="LedgerFormats.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="ripple.ref.LedgerEntryType"></a><a class="link" href="LedgerEntryType.html" title="LedgerEntryType">LedgerEntryType</a>
+</h3></div></div></div>
+<p>
+        <a class="indexterm" name="id956142"></a>
+Ledger entry types.
+      </p>
+<pre class="programlisting"><span class="keyword">enum</span> <span class="identifier">LedgerEntryType</span>
+</pre>
+<p>
+        <a class="indexterm" name="id956184"></a>
+ <a class="indexterm" name="id956170"></a>
+ <a class="indexterm" name="id956179"></a>
+ <a class="indexterm" name="id956168"></a>
+ <a class="indexterm" name="id956173"></a>
+ <a class="indexterm" name="id956220"></a>
+ <a class="indexterm" name="id956214"></a>
+ <a class="indexterm" name="id956225"></a>
+ <a class="indexterm" name="id956233"></a>
+ <a class="indexterm" name="id956216"></a>
+ <a class="indexterm" name="id956252"></a>
+ <a class="indexterm" name="id956254"></a>
+ <a class="indexterm" name="id956242"></a>
+ <a class="indexterm" name="id956260"></a>
+ <a class="indexterm" name="id956298"></a>
+ <a class="indexterm" name="id956291"></a>
+
+      </p>
+<h5>
+<a name="ripple.ref.LedgerEntryType.h0"></a>
+        <span class="phrase"><a name="ripple.ref.LedgerEntryType.values"></a></span><a class="link" href="LedgerEntryType.html#ripple.ref.LedgerEntryType.values">Values</a>
+      </h5>
+<div class="variablelist">
+<p class="title"><b></b></p>
+<dl class="variablelist">
+<dt><span class="term">ltANY</span></dt>
+<dd><p>
+              Special type, anything This is used when the type in the Keylet is
+              unknown, such as when building metadata.
+            </p></dd>
+<dt><span class="term">ltCHILD</span></dt>
+<dd><p>
+              Special type, anything not a directory This is used when the type in
+              the Keylet is unknown, such as when iterating.
+            </p></dd>
+<dt><span class="term">ltINVALID</span></dt>
+<dd></dd>
+<dt><span class="term">ltACCOUNT_ROOT</span></dt>
+<dd></dd>
+<dt><span class="term">ltDIR_NODE</span></dt>
+<dd><p>
+              Directory node.
+            </p></dd>
+<dt><span class="term">ltRIPPLE_STATE</span></dt>
+<dd></dd>
+<dt><span class="term">ltTICKET</span></dt>
+<dd></dd>
+<dt><span class="term">ltSIGNER_LIST</span></dt>
+<dd></dd>
+<dt><span class="term">ltOFFER</span></dt>
+<dd></dd>
+<dt><span class="term">ltLEDGER_HASHES</span></dt>
+<dd></dd>
+<dt><span class="term">ltAMENDMENTS</span></dt>
+<dd></dd>
+<dt><span class="term">ltFEE_SETTINGS</span></dt>
+<dd></dd>
+<dt><span class="term">ltSUSPAY</span></dt>
+<dd></dd>
+<dt><span class="term">ltPAYCHAN</span></dt>
+<dd></dd>
+<dt><span class="term">ltNICKNAME</span></dt>
+<dd></dd>
+<dt><span class="term">ltNotUsed01</span></dt>
+<dd></dd>
+</dl>
+</div>
+<p>
+        These are stored in serialized data.
+      </p>
+<h5>
+<a name="ripple.ref.LedgerEntryType.h1"></a>
+        <span class="phrase"><a name="ripple.ref.LedgerEntryType.remarks"></a></span><a class="link" href="LedgerEntryType.html#ripple.ref.LedgerEntryType.remarks">Remarks</a>
+      </h5>
+<p>
+        Changing these values results in a hard fork.
+      </p>
+<h5>
+<a name="ripple.ref.LedgerEntryType.h2"></a>
+        <span class="phrase"><a name="ripple.ref.LedgerEntryType.requirements"></a></span><a class="link" href="LedgerEntryType.html#ripple.ref.LedgerEntryType.requirements">Requirements</a>
+      </h5>
+<p>
+        <span class="emphasis"><em>Header: </em></span><code class="literal">rippled/src/ripple/protocol/LedgerFormats.h</code>
+      </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2016 Ripple Labs, Inc.<p>
+        Distributed under the Boost Software License, Version 1.0. (See accompanying
+        file LICENSE_1_0.txt or copy at <a href="http://www.boost.org/LICENSE_1_0.txt" target="_top">http://www.boost.org/LICENSE_1_0.txt</a>)
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="KnownFormats__Item/operator_lt__lt_.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="LedgerFormats.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

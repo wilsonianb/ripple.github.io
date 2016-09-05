@@ -1,0 +1,108 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>AccountIDCache</title>
+<link rel="stylesheet" href="../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../index.html" title="Ripple">
+<link rel="up" href="../ref.html" title="Reference">
+<link rel="prev" href="AccountID.html" title="AccountID">
+<link rel="next" href="AccountIDCache/AccountIDCache.html" title="AccountIDCache::AccountIDCache">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table cellpadding="2" width="100%"><tr><td valign="top"><img alt="Ripple Logo" width="300" height="80" src="../../images/logo.png"></td></tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="AccountID.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="AccountIDCache/AccountIDCache.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="ripple.ref.AccountIDCache"></a><a class="link" href="AccountIDCache.html" title="AccountIDCache">AccountIDCache</a>
+</h3></div></div></div>
+<p>
+        Caches the base58 representations of AccountIDs.
+      </p>
+<pre class="programlisting"><span class="keyword">class</span> <span class="identifier">AccountIDCache</span>
+</pre>
+<h5>
+<a name="ripple.ref.AccountIDCache.h0"></a>
+        <span class="phrase"><a name="ripple.ref.AccountIDCache.member_functions"></a></span><a class="link" href="AccountIDCache.html#ripple.ref.AccountIDCache.member_functions">Member
+        Functions</a>
+      </h5>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                <p>
+                  Name
+                </p>
+              </th>
+<th>
+                <p>
+                  Description
+                </p>
+              </th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="AccountIDCache/AccountIDCache.html" title="AccountIDCache::AccountIDCache"><span class="bold"><strong>AccountIDCache</strong></span></a>
+                </p>
+              </td>
+<td>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="AccountIDCache/operator_eq_.html" title="AccountIDCache::operator="><span class="bold"><strong>operator=</strong></span></a>
+                </p>
+              </td>
+<td>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="AccountIDCache/toBase58.html" title="AccountIDCache::toBase58"><span class="bold"><strong>toBase58</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Return ripple::toBase58 for the AccountID.
+                </p>
+              </td>
+</tr>
+</tbody>
+</table></div>
+<p>
+        This operation occurs with sufficient frequency to justify having a cache.
+        In the future, rippled should require clients to receive "binary"
+        results, where AccountIDs are hex-encoded.
+      </p>
+<h5>
+<a name="ripple.ref.AccountIDCache.h1"></a>
+        <span class="phrase"><a name="ripple.ref.AccountIDCache.requirements"></a></span><a class="link" href="AccountIDCache.html#ripple.ref.AccountIDCache.requirements">Requirements</a>
+      </h5>
+<p>
+        <span class="emphasis"><em>Header: </em></span><code class="literal">rippled/src/ripple/protocol/AccountID.h</code>
+      </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2016 Ripple Labs, Inc.<p>
+        Distributed under the Boost Software License, Version 1.0. (See accompanying
+        file LICENSE_1_0.txt or copy at <a href="http://www.boost.org/LICENSE_1_0.txt" target="_top">http://www.boost.org/LICENSE_1_0.txt</a>)
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="AccountID.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="AccountIDCache/AccountIDCache.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

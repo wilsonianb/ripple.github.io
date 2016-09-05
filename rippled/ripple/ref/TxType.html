@@ -1,0 +1,124 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>TxType</title>
+<link rel="stylesheet" href="../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../index.html" title="Ripple">
+<link rel="up" href="../ref.html" title="Reference">
+<link rel="prev" href="TxSeq.html" title="TxSeq">
+<link rel="next" href="TypedField.html" title="TypedField">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table cellpadding="2" width="100%"><tr><td valign="top"><img alt="Ripple Logo" width="300" height="80" src="../../images/logo.png"></td></tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="TxSeq.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="TypedField.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="ripple.ref.TxType"></a><a class="link" href="TxType.html" title="TxType">TxType</a>
+</h3></div></div></div>
+<p>
+        <a class="indexterm" name="id1179237"></a>
+Transaction type identifiers.
+      </p>
+<pre class="programlisting"><span class="keyword">enum</span> <span class="identifier">TxType</span>
+</pre>
+<p>
+        <a class="indexterm" name="id1179260"></a>
+ <a class="indexterm" name="id1179268"></a>
+ <a class="indexterm" name="id1179276"></a>
+ <a class="indexterm" name="id1179266"></a>
+ <a class="indexterm" name="id1179314"></a>
+ <a class="indexterm" name="id1179298"></a>
+ <a class="indexterm" name="id1179303"></a>
+ <a class="indexterm" name="id1179291"></a>
+ <a class="indexterm" name="id1179306"></a>
+ <a class="indexterm" name="id1179342"></a>
+ <a class="indexterm" name="id1179335"></a>
+ <a class="indexterm" name="id1179365"></a>
+ <a class="indexterm" name="id1179353"></a>
+ <a class="indexterm" name="id1179359"></a>
+ <a class="indexterm" name="id1179384"></a>
+ <a class="indexterm" name="id1179398"></a>
+ <a class="indexterm" name="id1179380"></a>
+ <a class="indexterm" name="id1179368"></a>
+ <a class="indexterm" name="id1179431"></a>
+ <a class="indexterm" name="id1179407"></a>
+
+      </p>
+<h5>
+<a name="ripple.ref.TxType.h0"></a>
+        <span class="phrase"><a name="ripple.ref.TxType.values"></a></span><a class="link" href="TxType.html#ripple.ref.TxType.values">Values</a>
+      </h5>
+<div class="variablelist">
+<p class="title"><b></b></p>
+<dl class="variablelist">
+<dt><span class="term">ttINVALID</span></dt>
+<dd></dd>
+<dt><span class="term">ttPAYMENT</span></dt>
+<dd></dd>
+<dt><span class="term">ttSUSPAY_CREATE</span></dt>
+<dd></dd>
+<dt><span class="term">ttSUSPAY_FINISH</span></dt>
+<dd></dd>
+<dt><span class="term">ttACCOUNT_SET</span></dt>
+<dd></dd>
+<dt><span class="term">ttSUSPAY_CANCEL</span></dt>
+<dd></dd>
+<dt><span class="term">ttREGULAR_KEY_SET</span></dt>
+<dd></dd>
+<dt><span class="term">ttNICKNAME_SET</span></dt>
+<dd></dd>
+<dt><span class="term">ttOFFER_CREATE</span></dt>
+<dd></dd>
+<dt><span class="term">ttOFFER_CANCEL</span></dt>
+<dd></dd>
+<dt><span class="term">no_longer_used</span></dt>
+<dd></dd>
+<dt><span class="term">ttTICKET_CREATE</span></dt>
+<dd></dd>
+<dt><span class="term">ttTICKET_CANCEL</span></dt>
+<dd></dd>
+<dt><span class="term">ttSIGNER_LIST_SET</span></dt>
+<dd></dd>
+<dt><span class="term">ttPAYCHAN_CREATE</span></dt>
+<dd></dd>
+<dt><span class="term">ttPAYCHAN_FUND</span></dt>
+<dd></dd>
+<dt><span class="term">ttPAYCHAN_CLAIM</span></dt>
+<dd></dd>
+<dt><span class="term">ttTRUST_SET</span></dt>
+<dd></dd>
+<dt><span class="term">ttAMENDMENT</span></dt>
+<dd></dd>
+<dt><span class="term">ttFEE</span></dt>
+<dd></dd>
+</dl>
+</div>
+<p>
+        These are part of the binary message format.
+      </p>
+<h5>
+<a name="ripple.ref.TxType.h1"></a>
+        <span class="phrase"><a name="ripple.ref.TxType.requirements"></a></span><a class="link" href="TxType.html#ripple.ref.TxType.requirements">Requirements</a>
+      </h5>
+<p>
+        <span class="emphasis"><em>Header: </em></span><code class="literal">rippled/src/ripple/protocol/TxFormats.h</code>
+      </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2016 Ripple Labs, Inc.<p>
+        Distributed under the Boost Software License, Version 1.0. (See accompanying
+        file LICENSE_1_0.txt or copy at <a href="http://www.boost.org/LICENSE_1_0.txt" target="_top">http://www.boost.org/LICENSE_1_0.txt</a>)
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="TxSeq.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="TypedField.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

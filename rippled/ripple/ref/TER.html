@@ -1,0 +1,358 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>TER</title>
+<link rel="stylesheet" href="../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../index.html" title="Ripple">
+<link rel="up" href="../ref.html" title="Reference">
+<link rel="prev" href="TAmounts/out.html" title="TAmounts::out">
+<link rel="next" href="TokenType.html" title="TokenType">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table cellpadding="2" width="100%"><tr><td valign="top"><img alt="Ripple Logo" width="300" height="80" src="../../images/logo.png"></td></tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="TAmounts/out.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="TokenType.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="ripple.ref.TER"></a><a class="link" href="TER.html" title="TER">TER</a>
+</h3></div></div></div>
+<p>
+        <a class="indexterm" name="id1175018"></a>
+
+      </p>
+<pre class="programlisting"><span class="keyword">enum</span> <span class="identifier">TER</span>
+</pre>
+<p>
+        <a class="indexterm" name="id1175060"></a>
+ <a class="indexterm" name="id1175064"></a>
+ <a class="indexterm" name="id1172846"></a>
+ <a class="indexterm" name="id1172840"></a>
+ <a class="indexterm" name="id1172859"></a>
+ <a class="indexterm" name="id1172862"></a>
+ <a class="indexterm" name="id1172829"></a>
+ <a class="indexterm" name="id1177733"></a>
+ <a class="indexterm" name="id1177705"></a>
+ <a class="indexterm" name="id1177709"></a>
+ <a class="indexterm" name="id1177721"></a>
+ <a class="indexterm" name="id1177738"></a>
+ <a class="indexterm" name="id1177768"></a>
+ <a class="indexterm" name="id1177773"></a>
+ <a class="indexterm" name="id1177762"></a>
+ <a class="indexterm" name="id1177744"></a>
+ <a class="indexterm" name="id1177775"></a>
+ <a class="indexterm" name="id1177788"></a>
+ <a class="indexterm" name="id1177789"></a>
+ <a class="indexterm" name="id1177803"></a>
+ <a class="indexterm" name="id1177831"></a>
+ <a class="indexterm" name="id1177817"></a>
+ <a class="indexterm" name="id1177845"></a>
+ <a class="indexterm" name="id1177822"></a>
+ <a class="indexterm" name="id1177837"></a>
+ <a class="indexterm" name="id1177877"></a>
+ <a class="indexterm" name="id1177855"></a>
+ <a class="indexterm" name="id1177870"></a>
+ <a class="indexterm" name="id1177882"></a>
+ <a class="indexterm" name="id1177909"></a>
+ <a class="indexterm" name="id1177893"></a>
+ <a class="indexterm" name="id1177919"></a>
+ <a class="indexterm" name="id1177912"></a>
+ <a class="indexterm" name="id1177921"></a>
+ <a class="indexterm" name="id1177931"></a>
+ <a class="indexterm" name="id1177945"></a>
+ <a class="indexterm" name="id1177932"></a>
+ <a class="indexterm" name="id1177955"></a>
+ <a class="indexterm" name="id1177943"></a>
+ <a class="indexterm" name="id1177997"></a>
+ <a class="indexterm" name="id1177999"></a>
+ <a class="indexterm" name="id1177971"></a>
+ <a class="indexterm" name="id1177986"></a>
+ <a class="indexterm" name="id1178014"></a>
+ <a class="indexterm" name="id1178038"></a>
+ <a class="indexterm" name="id1178017"></a>
+ <a class="indexterm" name="id1178010"></a>
+ <a class="indexterm" name="id1178035"></a>
+ <a class="indexterm" name="id1178053"></a>
+ <a class="indexterm" name="id1178059"></a>
+ <a class="indexterm" name="id1178067"></a>
+ <a class="indexterm" name="id1178068"></a>
+ <a class="indexterm" name="id1178091"></a>
+ <a class="indexterm" name="id1178103"></a>
+ <a class="indexterm" name="id1178097"></a>
+ <a class="indexterm" name="id1178117"></a>
+ <a class="indexterm" name="id1178119"></a>
+ <a class="indexterm" name="id1178135"></a>
+ <a class="indexterm" name="id1178157"></a>
+ <a class="indexterm" name="id1178149"></a>
+ <a class="indexterm" name="id1178139"></a>
+ <a class="indexterm" name="id1178188"></a>
+ <a class="indexterm" name="id1178178"></a>
+ <a class="indexterm" name="id1178194"></a>
+ <a class="indexterm" name="id1178176"></a>
+ <a class="indexterm" name="id1178169"></a>
+ <a class="indexterm" name="id1178235"></a>
+ <a class="indexterm" name="id1178205"></a>
+ <a class="indexterm" name="id1178223"></a>
+ <a class="indexterm" name="id1178206"></a>
+ <a class="indexterm" name="id1178233"></a>
+ <a class="indexterm" name="id1178268"></a>
+ <a class="indexterm" name="id1178269"></a>
+ <a class="indexterm" name="id1178262"></a>
+ <a class="indexterm" name="id1178238"></a>
+ <a class="indexterm" name="id1178304"></a>
+ <a class="indexterm" name="id1178307"></a>
+ <a class="indexterm" name="id1178290"></a>
+ <a class="indexterm" name="id1178279"></a>
+ <a class="indexterm" name="id1178293"></a>
+ <a class="indexterm" name="id1178345"></a>
+ <a class="indexterm" name="id1178328"></a>
+ <a class="indexterm" name="id1178325"></a>
+ <a class="indexterm" name="id1178314"></a>
+ <a class="indexterm" name="id1178385"></a>
+ <a class="indexterm" name="id1178387"></a>
+ <a class="indexterm" name="id1178357"></a>
+ <a class="indexterm" name="id1178369"></a>
+ <a class="indexterm" name="id1178379"></a>
+ <a class="indexterm" name="id1178409"></a>
+ <a class="indexterm" name="id1178418"></a>
+ <a class="indexterm" name="id1178400"></a>
+ <a class="indexterm" name="id1178407"></a>
+ <a class="indexterm" name="id1178440"></a>
+ <a class="indexterm" name="id1178454"></a>
+ <a class="indexterm" name="id1178445"></a>
+ <a class="indexterm" name="id1178429"></a>
+ <a class="indexterm" name="id1178457"></a>
+ <a class="indexterm" name="id1178482"></a>
+
+      </p>
+<h5>
+<a name="ripple.ref.TER.h0"></a>
+        <span class="phrase"><a name="ripple.ref.TER.values"></a></span><a class="link" href="TER.html#ripple.ref.TER.values">Values</a>
+      </h5>
+<div class="variablelist">
+<p class="title"><b></b></p>
+<dl class="variablelist">
+<dt><span class="term">telLOCAL_ERROR</span></dt>
+<dd></dd>
+<dt><span class="term">telBAD_DOMAIN</span></dt>
+<dd></dd>
+<dt><span class="term">telBAD_PATH_COUNT</span></dt>
+<dd></dd>
+<dt><span class="term">telBAD_PUBLIC_KEY</span></dt>
+<dd></dd>
+<dt><span class="term">telFAILED_PROCESSING</span></dt>
+<dd></dd>
+<dt><span class="term">telINSUF_FEE_P</span></dt>
+<dd></dd>
+<dt><span class="term">telNO_DST_PARTIAL</span></dt>
+<dd></dd>
+<dt><span class="term">telCAN_NOT_QUEUE</span></dt>
+<dd></dd>
+<dt><span class="term">temMALFORMED</span></dt>
+<dd></dd>
+<dt><span class="term">temBAD_AMOUNT</span></dt>
+<dd></dd>
+<dt><span class="term">temBAD_CURRENCY</span></dt>
+<dd></dd>
+<dt><span class="term">temBAD_EXPIRATION</span></dt>
+<dd></dd>
+<dt><span class="term">temBAD_FEE</span></dt>
+<dd></dd>
+<dt><span class="term">temBAD_ISSUER</span></dt>
+<dd></dd>
+<dt><span class="term">temBAD_LIMIT</span></dt>
+<dd></dd>
+<dt><span class="term">temBAD_OFFER</span></dt>
+<dd></dd>
+<dt><span class="term">temBAD_PATH</span></dt>
+<dd></dd>
+<dt><span class="term">temBAD_PATH_LOOP</span></dt>
+<dd></dd>
+<dt><span class="term">temBAD_SEND_XRP_LIMIT</span></dt>
+<dd></dd>
+<dt><span class="term">temBAD_SEND_XRP_MAX</span></dt>
+<dd></dd>
+<dt><span class="term">temBAD_SEND_XRP_NO_DIRECT</span></dt>
+<dd></dd>
+<dt><span class="term">temBAD_SEND_XRP_PARTIAL</span></dt>
+<dd></dd>
+<dt><span class="term">temBAD_SEND_XRP_PATHS</span></dt>
+<dd></dd>
+<dt><span class="term">temBAD_SEQUENCE</span></dt>
+<dd></dd>
+<dt><span class="term">temBAD_SIGNATURE</span></dt>
+<dd></dd>
+<dt><span class="term">temBAD_SRC_ACCOUNT</span></dt>
+<dd></dd>
+<dt><span class="term">temBAD_TRANSFER_RATE</span></dt>
+<dd></dd>
+<dt><span class="term">temDST_IS_SRC</span></dt>
+<dd></dd>
+<dt><span class="term">temDST_NEEDED</span></dt>
+<dd></dd>
+<dt><span class="term">temINVALID</span></dt>
+<dd></dd>
+<dt><span class="term">temINVALID_FLAG</span></dt>
+<dd></dd>
+<dt><span class="term">temREDUNDANT</span></dt>
+<dd></dd>
+<dt><span class="term">temRIPPLE_EMPTY</span></dt>
+<dd></dd>
+<dt><span class="term">temDISABLED</span></dt>
+<dd></dd>
+<dt><span class="term">temBAD_SIGNER</span></dt>
+<dd></dd>
+<dt><span class="term">temBAD_QUORUM</span></dt>
+<dd></dd>
+<dt><span class="term">temBAD_WEIGHT</span></dt>
+<dd></dd>
+<dt><span class="term">temUNCERTAIN</span></dt>
+<dd></dd>
+<dt><span class="term">temUNKNOWN</span></dt>
+<dd></dd>
+<dt><span class="term">tefFAILURE</span></dt>
+<dd></dd>
+<dt><span class="term">tefALREADY</span></dt>
+<dd></dd>
+<dt><span class="term">tefBAD_ADD_AUTH</span></dt>
+<dd></dd>
+<dt><span class="term">tefBAD_AUTH</span></dt>
+<dd></dd>
+<dt><span class="term">tefBAD_LEDGER</span></dt>
+<dd></dd>
+<dt><span class="term">tefCREATED</span></dt>
+<dd></dd>
+<dt><span class="term">tefEXCEPTION</span></dt>
+<dd></dd>
+<dt><span class="term">tefINTERNAL</span></dt>
+<dd></dd>
+<dt><span class="term">tefNO_AUTH_REQUIRED</span></dt>
+<dd></dd>
+<dt><span class="term">tefPAST_SEQ</span></dt>
+<dd></dd>
+<dt><span class="term">tefWRONG_PRIOR</span></dt>
+<dd></dd>
+<dt><span class="term">tefMASTER_DISABLED</span></dt>
+<dd></dd>
+<dt><span class="term">tefMAX_LEDGER</span></dt>
+<dd></dd>
+<dt><span class="term">tefBAD_SIGNATURE</span></dt>
+<dd></dd>
+<dt><span class="term">tefBAD_QUORUM</span></dt>
+<dd></dd>
+<dt><span class="term">tefNOT_MULTI_SIGNING</span></dt>
+<dd></dd>
+<dt><span class="term">tefBAD_AUTH_MASTER</span></dt>
+<dd></dd>
+<dt><span class="term">terRETRY</span></dt>
+<dd></dd>
+<dt><span class="term">terFUNDS_SPENT</span></dt>
+<dd></dd>
+<dt><span class="term">terINSUF_FEE_B</span></dt>
+<dd></dd>
+<dt><span class="term">terNO_ACCOUNT</span></dt>
+<dd></dd>
+<dt><span class="term">terNO_AUTH</span></dt>
+<dd></dd>
+<dt><span class="term">terNO_LINE</span></dt>
+<dd></dd>
+<dt><span class="term">terOWNERS</span></dt>
+<dd></dd>
+<dt><span class="term">terPRE_SEQ</span></dt>
+<dd></dd>
+<dt><span class="term">terLAST</span></dt>
+<dd></dd>
+<dt><span class="term">terNO_RIPPLE</span></dt>
+<dd></dd>
+<dt><span class="term">terQUEUED</span></dt>
+<dd></dd>
+<dt><span class="term">tesSUCCESS</span></dt>
+<dd></dd>
+<dt><span class="term">tecCLAIM</span></dt>
+<dd></dd>
+<dt><span class="term">tecPATH_PARTIAL</span></dt>
+<dd></dd>
+<dt><span class="term">tecUNFUNDED_ADD</span></dt>
+<dd></dd>
+<dt><span class="term">tecUNFUNDED_OFFER</span></dt>
+<dd></dd>
+<dt><span class="term">tecUNFUNDED_PAYMENT</span></dt>
+<dd></dd>
+<dt><span class="term">tecFAILED_PROCESSING</span></dt>
+<dd></dd>
+<dt><span class="term">tecDIR_FULL</span></dt>
+<dd></dd>
+<dt><span class="term">tecINSUF_RESERVE_LINE</span></dt>
+<dd></dd>
+<dt><span class="term">tecINSUF_RESERVE_OFFER</span></dt>
+<dd></dd>
+<dt><span class="term">tecNO_DST</span></dt>
+<dd></dd>
+<dt><span class="term">tecNO_DST_INSUF_XRP</span></dt>
+<dd></dd>
+<dt><span class="term">tecNO_LINE_INSUF_RESERVE</span></dt>
+<dd></dd>
+<dt><span class="term">tecNO_LINE_REDUNDANT</span></dt>
+<dd></dd>
+<dt><span class="term">tecPATH_DRY</span></dt>
+<dd></dd>
+<dt><span class="term">tecUNFUNDED</span></dt>
+<dd></dd>
+<dt><span class="term">tecNO_ALTERNATIVE_KEY</span></dt>
+<dd></dd>
+<dt><span class="term">tecNO_REGULAR_KEY</span></dt>
+<dd></dd>
+<dt><span class="term">tecOWNERS</span></dt>
+<dd></dd>
+<dt><span class="term">tecNO_ISSUER</span></dt>
+<dd></dd>
+<dt><span class="term">tecNO_AUTH</span></dt>
+<dd></dd>
+<dt><span class="term">tecNO_LINE</span></dt>
+<dd></dd>
+<dt><span class="term">tecINSUFF_FEE</span></dt>
+<dd></dd>
+<dt><span class="term">tecFROZEN</span></dt>
+<dd></dd>
+<dt><span class="term">tecNO_TARGET</span></dt>
+<dd></dd>
+<dt><span class="term">tecNO_PERMISSION</span></dt>
+<dd></dd>
+<dt><span class="term">tecNO_ENTRY</span></dt>
+<dd></dd>
+<dt><span class="term">tecINSUFFICIENT_RESERVE</span></dt>
+<dd></dd>
+<dt><span class="term">tecNEED_MASTER_KEY</span></dt>
+<dd></dd>
+<dt><span class="term">tecDST_TAG_NEEDED</span></dt>
+<dd></dd>
+<dt><span class="term">tecINTERNAL</span></dt>
+<dd></dd>
+<dt><span class="term">tecOVERSIZE</span></dt>
+<dd></dd>
+</dl>
+</div>
+<h5>
+<a name="ripple.ref.TER.h1"></a>
+        <span class="phrase"><a name="ripple.ref.TER.requirements"></a></span><a class="link" href="TER.html#ripple.ref.TER.requirements">Requirements</a>
+      </h5>
+<p>
+        <span class="emphasis"><em>Header: </em></span><code class="literal">rippled/src/ripple/protocol/TER.h</code>
+      </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2016 Ripple Labs, Inc.<p>
+        Distributed under the Boost Software License, Version 1.0. (See accompanying
+        file LICENSE_1_0.txt or copy at <a href="http://www.boost.org/LICENSE_1_0.txt" target="_top">http://www.boost.org/LICENSE_1_0.txt</a>)
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="TAmounts/out.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="TokenType.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>
