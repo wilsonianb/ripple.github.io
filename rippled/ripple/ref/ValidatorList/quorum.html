@@ -20,12 +20,18 @@
 <a name="ripple.ref.ValidatorList.quorum"></a><a class="link" href="quorum.html" title="ValidatorList::quorum">ValidatorList::quorum</a>
 </h4></div></div></div>
 <p>
-          <a class="indexterm" name="idp90200816"></a>
+          <a class="indexterm" name="idp81681392"></a>
 Get quorum value for current trusted key set.
         </p>
 <pre class="programlisting"><span class="identifier">std</span><span class="special">::</span><span class="identifier">size_t</span>
 <span class="identifier">quorum</span><span class="special">()</span> <span class="keyword">const</span><span class="special">;</span>
 </pre>
+<p>
+          The quorum is the minimum number of validations needed for a ledger to
+          be fully validated. It can change when the set of trusted validation keys
+          is updated (at the start of each consensus round) and primarily depends
+          on the number of trusted keys.
+        </p>
 <h6>
 <a name="ripple.ref.ValidatorList.quorum.h0"></a>
           <span class="phrase"><a name="ripple.ref.ValidatorList.quorum.thread_safety"></a></span><a class="link" href="quorum.html#ripple.ref.ValidatorList.quorum.thread_safety">Thread

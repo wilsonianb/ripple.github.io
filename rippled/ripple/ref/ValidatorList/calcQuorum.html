@@ -20,7 +20,7 @@
 <a name="ripple.ref.ValidatorList.calcQuorum"></a><a class="link" href="calcQuorum.html" title="ValidatorList::calcQuorum">ValidatorList::calcQuorum</a>
 </h4></div></div></div>
 <p>
-          <a class="indexterm" name="idp90067440"></a>
+          <a class="indexterm" name="idp81547520"></a>
 Determine the quorum for the trusted list size.
         </p>
 <pre class="programlisting"><span class="keyword">static</span>
@@ -29,6 +29,11 @@ Determine the quorum for the trusted list size.
     <span class="identifier">std</span><span class="special">::</span><span class="identifier">uint32_t</span> <span class="identifier">nTrusted</span><span class="special">,</span>
     <span class="identifier">std</span><span class="special">::</span><span class="identifier">uint32_t</span> <span class="identifier">nListed</span><span class="special">);</span>
 </pre>
+<p>
+          The quorum is the minimum number of validations needed for a ledger to
+          be fully validated. It is primarily dependent on the number of trusted
+          validation keys.
+        </p>
 <h6>
 <a name="ripple.ref.ValidatorList.calcQuorum.h0"></a>
           <span class="phrase"><a name="ripple.ref.ValidatorList.calcQuorum.parameters"></a></span><a class="link" href="calcQuorum.html#ripple.ref.ValidatorList.calcQuorum.parameters">Parameters</a>
