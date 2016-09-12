@@ -20,7 +20,7 @@
 <a name="ripple.ref.ManifestCache.getSigningKey"></a><a class="link" href="getSigningKey.html" title="ManifestCache::getSigningKey">ManifestCache::getSigningKey</a>
 </h4></div></div></div>
 <p>
-          <a class="indexterm" name="idp86224128"></a>
+          <a class="indexterm" name="idp73111680"></a>
 Returns master key's current signing key.
         </p>
 <pre class="programlisting"><span class="identifier">boost</span><span class="special">::</span><span class="identifier">optional</span><span class="special">&lt;</span> <span class="identifier">PublicKey</span> <span class="special">&gt;</span>
@@ -46,6 +46,13 @@ Returns master key's current signing key.
         </h6>
 <p>
           <code class="computeroutput"><span class="identifier">boost</span><span class="special">::</span><span class="identifier">none</span></code> if no known signing key from a manifest
+        </p>
+<h6>
+<a name="ripple.ref.ManifestCache.getSigningKey.h2"></a>
+          <span class="phrase"><a name="ripple.ref.ManifestCache.getSigningKey.thread_safety"></a></span><a class="link" href="getSigningKey.html#ripple.ref.ManifestCache.getSigningKey.thread_safety">Thread Safety</a>
+        </h6>
+<p>
+          May be called concurrently
         </p>
 </div>
 <table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>

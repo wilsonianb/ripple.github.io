@@ -20,7 +20,7 @@
 <a name="ripple.ref.ManifestCache.applyManifest"></a><a class="link" href="applyManifest.html" title="ManifestCache::applyManifest">ManifestCache::applyManifest</a>
 </h4></div></div></div>
 <p>
-          <a class="indexterm" name="idp86114880"></a>
+          <a class="indexterm" name="idp72992816"></a>
 Add manifest to cache.
         </p>
 <pre class="programlisting"><span class="identifier">ManifestDisposition</span>
@@ -52,6 +52,13 @@ Add manifest to cache.
 <p>
           <code class="computeroutput"><span class="identifier">ManifestDisposition</span><span class="special">::</span><span class="identifier">accepted</span></code> if successful, or <code class="computeroutput"><span class="identifier">untrusted</span></code>, <code class="computeroutput"><span class="identifier">stale</span></code>,
           or <code class="computeroutput"><span class="identifier">invalid</span></code> otherwise
+        </p>
+<h6>
+<a name="ripple.ref.ManifestCache.applyManifest.h2"></a>
+          <span class="phrase"><a name="ripple.ref.ManifestCache.applyManifest.thread_safety"></a></span><a class="link" href="applyManifest.html#ripple.ref.ManifestCache.applyManifest.thread_safety">Thread Safety</a>
+        </h6>
+<p>
+          May be called concurrently
         </p>
 </div>
 <table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
