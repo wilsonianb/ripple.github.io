@@ -1,0 +1,70 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>ManifestCache::applyManifest</title>
+<link rel="stylesheet" href="../../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../../index.html" title="Ripple">
+<link rel="up" href="../ManifestCache.html" title="ManifestCache">
+<link rel="prev" href="ManifestCache.html" title="ManifestCache::ManifestCache">
+<link rel="next" href="for_each_manifest.html" title="ManifestCache::for_each_manifest">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table cellpadding="2" width="100%"><tr><td valign="top"><img alt="Ripple Logo" width="300" height="80" src="../../../images/logo.png"></td></tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="ManifestCache.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ManifestCache.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="for_each_manifest.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="ripple.ref.ManifestCache.applyManifest"></a><a class="link" href="applyManifest.html" title="ManifestCache::applyManifest">ManifestCache::applyManifest</a>
+</h4></div></div></div>
+<p>
+          <a class="indexterm" name="idp86114880"></a>
+Add manifest to cache.
+        </p>
+<pre class="programlisting"><span class="identifier">ManifestDisposition</span>
+<span class="identifier">applyManifest</span><span class="special">(</span>
+    <span class="identifier">Manifest</span> <span class="identifier">m</span><span class="special">,</span>
+    <span class="identifier">ValidatorList</span><span class="special">&amp;</span> <span class="identifier">unl</span><span class="special">);</span>
+</pre>
+<h6>
+<a name="ripple.ref.ManifestCache.applyManifest.h0"></a>
+          <span class="phrase"><a name="ripple.ref.ManifestCache.applyManifest.parameters"></a></span><a class="link" href="applyManifest.html#ripple.ref.ManifestCache.applyManifest.parameters">Parameters</a>
+        </h6>
+<div class="variablelist">
+<p class="title"><b></b></p>
+<dl class="variablelist">
+<dt><span class="term">m</span></dt>
+<dd><p>
+                <span class="red">|3|Manifest</span> to add
+              </p></dd>
+<dt><span class="term">unl</span></dt>
+<dd><p>
+                Trusted validator list
+              </p></dd>
+</dl>
+</div>
+<h6>
+<a name="ripple.ref.ManifestCache.applyManifest.h1"></a>
+          <span class="phrase"><a name="ripple.ref.ManifestCache.applyManifest.return_value"></a></span><a class="link" href="applyManifest.html#ripple.ref.ManifestCache.applyManifest.return_value">Return Value</a>
+        </h6>
+<p>
+          <code class="computeroutput"><span class="identifier">ManifestDisposition</span><span class="special">::</span><span class="identifier">accepted</span></code> if successful, or <code class="computeroutput"><span class="identifier">untrusted</span></code>, <code class="computeroutput"><span class="identifier">stale</span></code>,
+          or <code class="computeroutput"><span class="identifier">invalid</span></code> otherwise
+        </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2016 Ripple Labs, Inc.<p>
+        Distributed under the Boost Software License, Version 1.0. (See accompanying
+        file LICENSE_1_0.txt or copy at <a href="http://www.boost.org/LICENSE_1_0.txt" target="_top">http://www.boost.org/LICENSE_1_0.txt</a>)
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="ManifestCache.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ManifestCache.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="for_each_manifest.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

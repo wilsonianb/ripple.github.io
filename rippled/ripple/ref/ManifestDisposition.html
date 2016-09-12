@@ -1,0 +1,81 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>ManifestDisposition</title>
+<link rel="stylesheet" href="../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../index.html" title="Ripple">
+<link rel="up" href="../ref.html" title="Reference">
+<link rel="prev" href="ManifestCache/save.html" title="ManifestCache::save">
+<link rel="next" href="ValidatorList.html" title="ValidatorList">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table cellpadding="2" width="100%"><tr><td valign="top"><img alt="Ripple Logo" width="300" height="80" src="../../images/logo.png"></td></tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="ManifestCache/save.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ValidatorList.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="ripple.ref.ManifestDisposition"></a><a class="link" href="ManifestDisposition.html" title="ManifestDisposition">ManifestDisposition</a>
+</h3></div></div></div>
+<p>
+        <a class="indexterm" name="idp86287856"></a>
+
+      </p>
+<pre class="programlisting"><span class="keyword">enum</span> <span class="identifier">ManifestDisposition</span>
+</pre>
+<p>
+        <a class="indexterm" name="idp86290736"></a>
+ <a class="indexterm" name="idp86291744"></a>
+ <a class="indexterm" name="idp86292752"></a>
+ <a class="indexterm" name="idp86293760"></a>
+
+      </p>
+<h5>
+<a name="ripple.ref.ManifestDisposition.h0"></a>
+        <span class="phrase"><a name="ripple.ref.ManifestDisposition.values"></a></span><a class="link" href="ManifestDisposition.html#ripple.ref.ManifestDisposition.values">Values</a>
+      </h5>
+<div class="variablelist">
+<p class="title"><b></b></p>
+<dl class="variablelist">
+<dt><span class="term">accepted</span></dt>
+<dd><p>
+              Manifest is valid.
+            </p></dd>
+<dt><span class="term">untrusted</span></dt>
+<dd><p>
+              Manifest declares an untrusted master key.
+            </p></dd>
+<dt><span class="term">stale</span></dt>
+<dd><p>
+              Trusted master key, but seq is too old.
+            </p></dd>
+<dt><span class="term">invalid</span></dt>
+<dd><p>
+              Trusted and timely, but invalid signature.
+            </p></dd>
+</dl>
+</div>
+<h5>
+<a name="ripple.ref.ManifestDisposition.h1"></a>
+        <span class="phrase"><a name="ripple.ref.ManifestDisposition.requirements"></a></span><a class="link" href="ManifestDisposition.html#ripple.ref.ManifestDisposition.requirements">Requirements</a>
+      </h5>
+<p>
+        <span class="emphasis"><em>Header: </em></span><code class="literal">ripple/app/misc/Manifest.h</code>
+      </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2016 Ripple Labs, Inc.<p>
+        Distributed under the Boost Software License, Version 1.0. (See accompanying
+        file LICENSE_1_0.txt or copy at <a href="http://www.boost.org/LICENSE_1_0.txt" target="_top">http://www.boost.org/LICENSE_1_0.txt</a>)
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="ManifestCache/save.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ValidatorList.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>
