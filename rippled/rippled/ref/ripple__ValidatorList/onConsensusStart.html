@@ -1,0 +1,97 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>ValidatorList::onConsensusStart</title>
+<link rel="stylesheet" href="../../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../../index.html" title="rippled">
+<link rel="up" href="../ripple__ValidatorList.html" title="ValidatorList">
+<link rel="prev" href="mutex_.html" title="ValidatorList::mutex_">
+<link rel="next" href="onSiteFetch.html" title="ValidatorList::onSiteFetch">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="mutex_.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__ValidatorList.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="onSiteFetch.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="rippled.ref.ripple__ValidatorList.onConsensusStart"></a><a class="link" href="onConsensusStart.html" title="ValidatorList::onConsensusStart">ValidatorList::onConsensusStart</a>
+</h4></div></div></div>
+<p>
+          <a class="indexterm" name="idp112512032"></a>
+Update trusted keys.
+        </p>
+<h6>
+<a name="rippled.ref.ripple__ValidatorList.onConsensusStart.h0"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__ValidatorList.onConsensusStart.synopsis"></a></span><a class="link" href="onConsensusStart.html#rippled.ref.ripple__ValidatorList.onConsensusStart.synopsis">Synopsis</a>
+        </h6>
+<pre class="programlisting"><span class="keyword">template</span><span class="special">&lt;</span>
+    <span class="keyword">class</span> <span class="identifier">KeySet</span><span class="special">&gt;</span>
+<span class="keyword">void</span>
+<span class="identifier">onConsensusStart</span><span class="special">(</span>
+    <span class="identifier">KeySet</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">seenValidators</span><span class="special">);</span>
+</pre>
+<h6>
+<a name="rippled.ref.ripple__ValidatorList.onConsensusStart.h1"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__ValidatorList.onConsensusStart.description"></a></span><a class="link" href="onConsensusStart.html#rippled.ref.ripple__ValidatorList.onConsensusStart.description">Description</a>
+        </h6>
+<p>
+          Reset the trusted keys based on latest manifests, received validations,
+          and lists from sites.
+        </p>
+<h6>
+<a name="rippled.ref.ripple__ValidatorList.onConsensusStart.h2"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__ValidatorList.onConsensusStart.parameters"></a></span><a class="link" href="onConsensusStart.html#rippled.ref.ripple__ValidatorList.onConsensusStart.parameters">Parameters</a>
+        </h6>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                  <p>
+                    Name
+                  </p>
+                </th>
+<th>
+                  <p>
+                    Description
+                  </p>
+                </th>
+</tr></thead>
+<tbody><tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">seenValidators</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    Set of public keys used to sign recently received validations
+                  </p>
+                </td>
+</tr></tbody>
+</table></div>
+<h6>
+<a name="rippled.ref.ripple__ValidatorList.onConsensusStart.h3"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__ValidatorList.onConsensusStart.thread_safety"></a></span><a class="link" href="onConsensusStart.html#rippled.ref.ripple__ValidatorList.onConsensusStart.thread_safety">Thread
+          Safety</a>
+        </h6>
+<p>
+          May be called concurrently
+        </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="mutex_.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__ValidatorList.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="onSiteFetch.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

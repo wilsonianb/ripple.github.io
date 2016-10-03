@@ -1,0 +1,100 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>ValidatorList::removePublisher</title>
+<link rel="stylesheet" href="../../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../../index.html" title="rippled">
+<link rel="up" href="../ripple__ValidatorList.html" title="ValidatorList">
+<link rel="prev" href="read_mutex_.html" title="ValidatorList::read_mutex_">
+<link rel="next" href="setTimer.html" title="ValidatorList::setTimer">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="read_mutex_.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__ValidatorList.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="setTimer.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="rippled.ref.ripple__ValidatorList.removePublisher"></a><a class="link" href="removePublisher.html" title="ValidatorList::removePublisher">ValidatorList::removePublisher</a>
+</h4></div></div></div>
+<p>
+          <a class="indexterm" name="idp112661152"></a>
+Stop trusting lists signed by publisher's public
+          key.
+        </p>
+<h6>
+<a name="rippled.ref.ripple__ValidatorList.removePublisher.h0"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__ValidatorList.removePublisher.synopsis"></a></span><a class="link" href="removePublisher.html#rippled.ref.ripple__ValidatorList.removePublisher.synopsis">Synopsis</a>
+        </h6>
+<pre class="programlisting"><span class="keyword">bool</span>
+<span class="identifier">removePublisher</span><span class="special">(</span>
+    <span class="identifier">PublicKey</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">publisherKey</span><span class="special">);</span>
+</pre>
+<h6>
+<a name="rippled.ref.ripple__ValidatorList.removePublisher.h1"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__ValidatorList.removePublisher.description"></a></span><a class="link" href="removePublisher.html#rippled.ref.ripple__ValidatorList.removePublisher.description">Description</a>
+        </h6>
+<h6>
+<a name="rippled.ref.ripple__ValidatorList.removePublisher.h2"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__ValidatorList.removePublisher.parameters"></a></span><a class="link" href="removePublisher.html#rippled.ref.ripple__ValidatorList.removePublisher.parameters">Parameters</a>
+        </h6>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                  <p>
+                    Name
+                  </p>
+                </th>
+<th>
+                  <p>
+                    Description
+                  </p>
+                </th>
+</tr></thead>
+<tbody><tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">publisherKey</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    Publisher public key
+                  </p>
+                </td>
+</tr></tbody>
+</table></div>
+<h6>
+<a name="rippled.ref.ripple__ValidatorList.removePublisher.h3"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__ValidatorList.removePublisher.return_value"></a></span><a class="link" href="removePublisher.html#rippled.ref.ripple__ValidatorList.removePublisher.return_value">Return
+          Value</a>
+        </h6>
+<p>
+          <code class="computeroutput"><span class="keyword">false</span></code> if key was not trusted
+        </p>
+<h6>
+<a name="rippled.ref.ripple__ValidatorList.removePublisher.h4"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__ValidatorList.removePublisher.thread_safety"></a></span><a class="link" href="removePublisher.html#rippled.ref.ripple__ValidatorList.removePublisher.thread_safety">Thread
+          Safety</a>
+        </h6>
+<p>
+          May be called concurrently
+        </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="read_mutex_.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__ValidatorList.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="setTimer.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

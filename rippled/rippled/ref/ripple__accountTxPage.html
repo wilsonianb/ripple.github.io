@@ -1,0 +1,67 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>accountTxPage</title>
+<link rel="stylesheet" href="../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../index.html" title="rippled">
+<link rel="up" href="../ref.html" title="Reference">
+<link rel="prev" href="ripple__ValidatorList__Site/uri.html" title="ValidatorList::Site::uri">
+<link rel="next" href="ripple__convertBlobsToTxResult.html" title="convertBlobsToTxResult">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="ripple__ValidatorList__Site/uri.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__convertBlobsToTxResult.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="rippled.ref.ripple__accountTxPage"></a><a class="link" href="ripple__accountTxPage.html" title="accountTxPage">accountTxPage</a>
+</h3></div></div></div>
+<p>
+        <a class="indexterm" name="idp113062816"></a>
+
+      </p>
+<h5>
+<a name="rippled.ref.ripple__accountTxPage.h0"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__accountTxPage.synopsis"></a></span><a class="link" href="ripple__accountTxPage.html#rippled.ref.ripple__accountTxPage.synopsis">Synopsis</a>
+      </h5>
+<pre class="programlisting"><span class="keyword">void</span>
+<span class="identifier">accountTxPage</span><span class="special">(</span>
+    <span class="identifier">DatabaseCon</span><span class="special">&amp;</span> <span class="identifier">database</span><span class="special">,</span>
+    <span class="identifier">AccountIDCache</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">idCache</span><span class="special">,</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">function</span><span class="special">&lt;</span> <span class="keyword">void</span><span class="special">(</span><span class="identifier">std</span><span class="special">::</span><span class="identifier">uint32_t</span><span class="special">)&gt;</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">onUnsavedLedger</span><span class="special">,</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">function</span><span class="special">&lt;</span> <span class="keyword">void</span><span class="special">(</span><span class="identifier">std</span><span class="special">::</span><span class="identifier">uint32_t</span><span class="special">,</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">string</span> <span class="keyword">const</span> <span class="special">&amp;,</span> <span class="identifier">Blob</span> <span class="keyword">const</span> <span class="special">&amp;,</span> <span class="identifier">Blob</span> <span class="keyword">const</span> <span class="special">&amp;)&gt;</span> <span class="keyword">const</span><span class="special">&amp;,</span>
+    <span class="identifier">AccountID</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">account</span><span class="special">,</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">int32_t</span> <span class="identifier">minLedger</span><span class="special">,</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">int32_t</span> <span class="identifier">maxLedger</span><span class="special">,</span>
+    <span class="keyword">bool</span> <span class="identifier">forward</span><span class="special">,</span>
+    <span class="identifier">Json</span><span class="special">::</span><span class="identifier">Value</span><span class="special">&amp;</span> <span class="identifier">token</span><span class="special">,</span>
+    <span class="keyword">int</span> <span class="identifier">limit</span><span class="special">,</span>
+    <span class="keyword">bool</span> <span class="identifier">bAdmin</span><span class="special">,</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">uint32_t</span> <span class="identifier">pageLength</span><span class="special">);</span>
+</pre>
+<h5>
+<a name="rippled.ref.ripple__accountTxPage.h1"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__accountTxPage.description"></a></span><a class="link" href="ripple__accountTxPage.html#rippled.ref.ripple__accountTxPage.description">Description</a>
+      </h5>
+<h5>
+<a name="rippled.ref.ripple__accountTxPage.h2"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__accountTxPage.header"></a></span><a class="link" href="ripple__accountTxPage.html#rippled.ref.ripple__accountTxPage.header">Header</a>
+      </h5>
+<p>
+        <code class="computeroutput"><span class="preprocessor">#include</span> <span class="special">&lt;</span><span class="identifier">ripple</span><span class="special">/</span><span class="identifier">app</span><span class="special">/</span><span class="identifier">misc</span><span class="special">/</span><span class="identifier">impl</span><span class="special">/</span><span class="identifier">AccountTxPaging</span><span class="special">.</span><span class="identifier">h</span><span class="special">&gt;</span></code>
+      </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="ripple__ValidatorList__Site/uri.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__convertBlobsToTxResult.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

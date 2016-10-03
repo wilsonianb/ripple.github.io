@@ -1,0 +1,64 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>make_NetworkOPs</title>
+<link rel="stylesheet" href="../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../index.html" title="rippled">
+<link rel="up" href="../ref.html" title="Reference">
+<link rel="prev" href="ripple__make_FeeVote.html" title="make_FeeVote">
+<link rel="next" href="ripple__make_SHAMapStore.html" title="make_SHAMapStore">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="ripple__make_FeeVote.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__make_SHAMapStore.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="rippled.ref.ripple__make_NetworkOPs"></a><a class="link" href="ripple__make_NetworkOPs.html" title="make_NetworkOPs">make_NetworkOPs</a>
+</h3></div></div></div>
+<p>
+        <a class="indexterm" name="idp113267264"></a>
+
+      </p>
+<h5>
+<a name="rippled.ref.ripple__make_NetworkOPs.h0"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__make_NetworkOPs.synopsis"></a></span><a class="link" href="ripple__make_NetworkOPs.html#rippled.ref.ripple__make_NetworkOPs.synopsis">Synopsis</a>
+      </h5>
+<pre class="programlisting"><span class="identifier">std</span><span class="special">::</span><span class="identifier">unique_ptr</span><span class="special">&lt;</span> <span class="identifier">NetworkOPs</span> <span class="special">&gt;</span>
+<span class="identifier">make_NetworkOPs</span><span class="special">(</span>
+    <span class="identifier">Application</span><span class="special">&amp;</span> <span class="identifier">app</span><span class="special">,</span>
+    <span class="identifier">NetworkOPs</span><span class="special">::</span><span class="identifier">clock_type</span><span class="special">&amp;</span> <span class="identifier">clock</span><span class="special">,</span>
+    <span class="keyword">bool</span> <span class="identifier">standalone</span><span class="special">,</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">size_t</span> <span class="identifier">network_quorum</span><span class="special">,</span>
+    <span class="keyword">bool</span> <span class="identifier">start_valid</span><span class="special">,</span>
+    <span class="identifier">JobQueue</span><span class="special">&amp;</span> <span class="identifier">job_queue</span><span class="special">,</span>
+    <span class="identifier">LedgerMaster</span><span class="special">&amp;</span> <span class="identifier">ledgerMaster</span><span class="special">,</span>
+    <span class="identifier">Stoppable</span><span class="special">&amp;</span> <span class="identifier">parent</span><span class="special">,</span>
+    <span class="identifier">beast</span><span class="special">::</span><span class="identifier">Journal</span> <span class="identifier">journal</span><span class="special">);</span>
+</pre>
+<h5>
+<a name="rippled.ref.ripple__make_NetworkOPs.h1"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__make_NetworkOPs.description"></a></span><a class="link" href="ripple__make_NetworkOPs.html#rippled.ref.ripple__make_NetworkOPs.description">Description</a>
+      </h5>
+<h5>
+<a name="rippled.ref.ripple__make_NetworkOPs.h2"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__make_NetworkOPs.header"></a></span><a class="link" href="ripple__make_NetworkOPs.html#rippled.ref.ripple__make_NetworkOPs.header">Header</a>
+      </h5>
+<p>
+        <code class="computeroutput"><span class="preprocessor">#include</span> <span class="special">&lt;</span><span class="identifier">ripple</span><span class="special">/</span><span class="identifier">app</span><span class="special">/</span><span class="identifier">misc</span><span class="special">/</span><span class="identifier">NetworkOPs</span><span class="special">.</span><span class="identifier">h</span><span class="special">&gt;</span></code>
+      </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="ripple__make_FeeVote.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__make_SHAMapStore.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

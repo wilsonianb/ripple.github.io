@@ -1,0 +1,313 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>ValidatorList</title>
+<link rel="stylesheet" href="../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../index.html" title="rippled">
+<link rel="up" href="../ref.html" title="Reference">
+<link rel="prev" href="ripple__Validations/_Validations.html" title="Validations::~Validations">
+<link rel="next" href="ripple__ValidatorList/ValidatorList.html" title="ValidatorList::ValidatorList">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="ripple__Validations/_Validations.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__ValidatorList/ValidatorList.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="rippled.ref.ripple__ValidatorList"></a><a class="link" href="ripple__ValidatorList.html" title="ValidatorList">ValidatorList</a>
+</h3></div></div></div>
+<p>
+        Trusted Validators List
+      </p>
+<h5>
+<a name="rippled.ref.ripple__ValidatorList.h0"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__ValidatorList.synopsis"></a></span><a class="link" href="ripple__ValidatorList.html#rippled.ref.ripple__ValidatorList.synopsis">Synopsis</a>
+      </h5>
+<pre class="programlisting"><span class="keyword">class</span> <span class="identifier">ValidatorList</span>
+</pre>
+<h5>
+<a name="rippled.ref.ripple__ValidatorList.h1"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__ValidatorList.member_functions"></a></span><a class="link" href="ripple__ValidatorList.html#rippled.ref.ripple__ValidatorList.member_functions">Member
+        Functions</a>
+      </h5>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                <p>
+                  Name
+                </p>
+              </th>
+<th>
+                <p>
+                  Description
+                </p>
+              </th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__ValidatorList/ValidatorList.html" title="ValidatorList::ValidatorList"><span class="bold"><strong>ValidatorList</strong></span></a>
+                </p>
+              </td>
+<td>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__ValidatorList/for_each_listed.html" title="ValidatorList::for_each_listed"><span class="bold"><strong>for_each_listed</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Invokes the callback once for every listed validation public key.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__ValidatorList/getListedKey.html" title="ValidatorList::getListedKey"><span class="bold"><strong>getListedKey</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Returns listed master public if public key is included on any lists.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__ValidatorList/getTrustedKey.html" title="ValidatorList::getTrustedKey"><span class="bold"><strong>getTrustedKey</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Returns master public key if public key is trusted.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__ValidatorList/join.html" title="ValidatorList::join"><span class="bold"><strong>join</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Wait for current fetches from sites to complete.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__ValidatorList/listed.html" title="ValidatorList::listed"><span class="bold"><strong>listed</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Returns true if public key is included on any lists.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__ValidatorList/load.html" title="ValidatorList::load"><span class="bold"><strong>load</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Load configured site URIs and trusted keys.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__ValidatorList/onConsensusStart.html" title="ValidatorList::onConsensusStart"><span class="bold"><strong>onConsensusStart</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Update trusted keys.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__ValidatorList/quorum.html" title="ValidatorList::quorum"><span class="bold"><strong>quorum</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Get quorum value for current trusted key set.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__ValidatorList/removePublisher.html" title="ValidatorList::removePublisher"><span class="bold"><strong>removePublisher</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Stop trusting lists signed by publisher's public key.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__ValidatorList/start.html" title="ValidatorList::start"><span class="bold"><strong>start</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Start fetching lists from sites.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__ValidatorList/stop.html" title="ValidatorList::stop"><span class="bold"><strong>stop</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Stop fetching lists from sites.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__ValidatorList/trusted.html" title="ValidatorList::trusted"><span class="bold"><strong>trusted</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Returns true if public key is trusted.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__ValidatorList/trustedPublisher.html" title="ValidatorList::trustedPublisher"><span class="bold"><strong>trustedPublisher</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Returns true if public key is a trusted publisher.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__ValidatorList/_ValidatorList.html" title="ValidatorList::~ValidatorList"><span class="bold"><strong>~ValidatorList</strong></span></a>
+                </p>
+              </td>
+<td>
+              </td>
+</tr>
+</tbody>
+</table></div>
+<h5>
+<a name="rippled.ref.ripple__ValidatorList.h2"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__ValidatorList.description"></a></span><a class="link" href="ripple__ValidatorList.html#rippled.ref.ripple__ValidatorList.description">Description</a>
+      </h5>
+<p>
+        Rippled accepts ledger proposals and validations from trusted validator nodes.
+        A ledger is considered fully-validated once the number of received trusted
+        validations for a ledger meets or exceeds a quorum value.
+      </p>
+<p>
+        This class manages the set of validation public keys the local rippled node
+        trusts. The list of trusted keys is populated using the keys listed in the
+        configuration file as well as remote sites that serve lists of keys recommended
+        by trusted publishers. The site URIs and trusted publisher public keys are
+        specified in the config.
+      </p>
+<p>
+        The validator lists from the remote sites are fetched at a regular interval.
+        Fetched lists are expected to be in JSON format and contain the following
+        fields:
+      </p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem">
+            <code class="computeroutput"><span class="string">"manifest"</span></code>: Base64-encoded
+            serialization of a manifest containing the publisher's master and signing
+            public keys. This has the same format as the <code class="computeroutput"><span class="identifier">validation_manifest</span></code>
+            config section.
+          </li>
+<li class="listitem">
+            <code class="computeroutput"><span class="string">"blob"</span></code>: Base64-encoded
+            JSON string containing a <code class="computeroutput"><span class="string">"sequence"</span></code>
+            and <code class="computeroutput"><span class="string">"validators"</span></code>
+            field. <code class="computeroutput"><span class="string">"validators"</span></code>
+            contains an array of objects with <code class="computeroutput"><span class="string">"validation_public_key"</span></code>
+            and <code class="computeroutput"><span class="string">"manifest"</span></code>
+            fields. <code class="computeroutput"><span class="string">"validation_public_key"</span></code>
+            should be the master public key.
+          </li>
+<li class="listitem">
+            <code class="computeroutput"><span class="string">"signature"</span></code>: Hex-encoded
+            signature of the blob using the publisher's signing key.
+          </li>
+<li class="listitem">
+            <code class="computeroutput"><span class="string">"version"</span></code>: 1
+          </li>
+<li class="listitem">
+            <code class="computeroutput"><span class="string">"refreshInterval"</span></code>:
+            (optional) recommended fetch interval in minutes
+          </li>
+</ul></div>
+<p>
+        Individual validator lists are stored separately by publisher. The number
+        of lists on which a validator's public key appears is also tracked.
+      </p>
+<p>
+        The list of trusted validation public keys is reset at the start of each
+        consensus round to take into account the latest fetched lists as well as
+        the set of validators from whom validations are being received. Listed validation
+        public keys are shuffled and then sorted by the number of lists they appear
+        on. (The shuffling makes the order/rank of validators with the same number
+        of listings non-deterministic.) If there is only one list, all listed keys
+        are trusted. Otherwise, the trusted list size is set to 80% of the median
+        list length. Finally, a quorum value is calculated for the new trusted validator
+        list.
+      </p>
+<h5>
+<a name="rippled.ref.ripple__ValidatorList.h3"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__ValidatorList.header"></a></span><a class="link" href="ripple__ValidatorList.html#rippled.ref.ripple__ValidatorList.header">Header</a>
+      </h5>
+<p>
+        <code class="computeroutput"><span class="preprocessor">#include</span> <span class="special">&lt;</span><span class="identifier">ripple</span><span class="special">/</span><span class="identifier">app</span><span class="special">/</span><span class="identifier">misc</span><span class="special">/</span><span class="identifier">ValidatorList</span><span class="special">.</span><span class="identifier">h</span><span class="special">&gt;</span></code>
+      </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="ripple__Validations/_Validations.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__ValidatorList/ValidatorList.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

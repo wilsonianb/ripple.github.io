@@ -1,0 +1,54 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>HashRouter::Entry::shouldRelay</title>
+<link rel="stylesheet" href="../../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../../index.html" title="rippled">
+<link rel="up" href="../ripple__HashRouter__Entry.html" title="HashRouter::Entry">
+<link rel="prev" href="setFlags.html" title="HashRouter::Entry::setFlags">
+<link rel="next" href="../ripple__LedgerToValidationCounter.html" title="LedgerToValidationCounter">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="setFlags.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__HashRouter__Entry.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="../ripple__LedgerToValidationCounter.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="rippled.ref.ripple__HashRouter__Entry.shouldRelay"></a><a class="link" href="shouldRelay.html" title="HashRouter::Entry::shouldRelay">HashRouter::Entry::shouldRelay</a>
+</h4></div></div></div>
+<p>
+          <a class="indexterm" name="idp104581456"></a>
+Determines if this item should be relayed.
+        </p>
+<h6>
+<a name="rippled.ref.ripple__HashRouter__Entry.shouldRelay.h0"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__HashRouter__Entry.shouldRelay.synopsis"></a></span><a class="link" href="shouldRelay.html#rippled.ref.ripple__HashRouter__Entry.shouldRelay.synopsis">Synopsis</a>
+        </h6>
+<pre class="programlisting"><span class="keyword">bool</span>
+<span class="identifier">shouldRelay</span><span class="special">(</span>
+    <span class="identifier">Stopwatch</span><span class="special">::</span><span class="identifier">time_point</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">now</span><span class="special">,</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">chrono</span><span class="special">::</span><span class="identifier">seconds</span> <span class="identifier">holdTime</span><span class="special">);</span>
+</pre>
+<h6>
+<a name="rippled.ref.ripple__HashRouter__Entry.shouldRelay.h1"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__HashRouter__Entry.shouldRelay.description"></a></span><a class="link" href="shouldRelay.html#rippled.ref.ripple__HashRouter__Entry.shouldRelay.description">Description</a>
+        </h6>
+<p>
+          Checks whether the item has been recently relayed. If it has, return false.
+          If it has not, update the last relay timestamp and return true.
+        </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="setFlags.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__HashRouter__Entry.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="../ripple__LedgerToValidationCounter.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>
