@@ -18,8 +18,8 @@
 <a name="rippled.ref.ripple__ValidatorList.load"></a><a class="link" href="load.html" title="ValidatorList::load">ValidatorList::load</a>
 </h4></div></div></div>
 <p>
-          <a class="indexterm" name="idp95853040"></a>
-Load configured site URIs and trusted keys.
+          <a class="indexterm" name="idp81186752"></a>
+Load configured trusted keys.
         </p>
 <h6>
 <a name="rippled.ref.ripple__ValidatorList.load.h0"></a>
@@ -29,7 +29,6 @@ Load configured site URIs and trusted keys.
 <span class="identifier">load</span><span class="special">(</span>
     <span class="identifier">PublicKey</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">localSigningKey</span><span class="special">,</span>
     <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">string</span> <span class="special">&gt;</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">configKeys</span><span class="special">,</span>
-    <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">string</span> <span class="special">&gt;</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">siteURIs</span><span class="special">,</span>
     <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">string</span> <span class="special">&gt;</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">publisherKeys</span><span class="special">,</span>
     <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">string</span> <span class="special">&gt;</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">configManifest</span><span class="special">);</span>
 </pre>
@@ -81,18 +80,6 @@ Load configured site URIs and trusted keys.
                   <p>
                     List of trusted keys from config. Each entry consists of a base58
                     encoded validation public key, optionally followed by a comment.
-                  </p>
-                </td>
-</tr>
-<tr>
-<td>
-                  <p>
-                    <code class="computeroutput"><span class="identifier">siteURIs</span></code>
-                  </p>
-                </td>
-<td>
-                  <p>
-                    List of URIs to fetch published validator lists
                   </p>
                 </td>
 </tr>

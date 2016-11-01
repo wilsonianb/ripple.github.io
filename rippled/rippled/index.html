@@ -6,40 +6,50 @@
 <meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="../index.html" title="rippled">
 <link rel="up" href="../index.html" title="rippled">
-<link rel="prev" href="ref/ripple__ValidatorList__Site/uri.html" title="ValidatorList::Site::uri">
+<link rel="prev" href="ref/ripple__ValidatorSite__Site/uri.html" title="ValidatorSite::Site::uri">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
 <div class="spirit-nav">
-<a accesskey="p" href="ref/ripple__ValidatorList__Site/uri.html"><img src="../images/prev.png" alt="Prev"></a><a accesskey="u" href="../index.html"><img src="../images/up.png" alt="Up"></a><a accesskey="h" href="../index.html"><img src="../images/home.png" alt="Home"></a>
+<a accesskey="p" href="ref/ripple__ValidatorSite__Site/uri.html"><img src="../images/prev.png" alt="Prev"></a><a accesskey="u" href="../index.html"><img src="../images/up.png" alt="Up"></a><a accesskey="h" href="../index.html"><img src="../images/home.png" alt="Home"></a>
 </div>
 <div class="section">
 <div class="titlepage"><div><div><h2 class="title" style="clear: both">
 <a name="rippled.index"></a>Index</h2></div></div></div>
 <div class="index">
 <div class="titlepage"><div><div><h3 class="title">
-<a name="idp96532272"></a>Index</h3></div></div></div>
+<a name="idp82099584"></a>Index</h3></div></div></div>
 <div xmlns:xlink="http://www.w3.org/1999/xlink" class="index">
 <div class="indexdiv">
 <h3>Symbols</h3>
 <dl>
-<dt id="ientry-idp96370656">~ValidatorList</dt>
+<dt id="ientry-idp81527104">~ValidatorList</dt>
 <dd><dl><dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/_ValidatorList.html">ValidatorList::~ValidatorList</a>
+</dt></dl></dd>
+<dt id="ientry-idp81998816">~ValidatorSite</dt>
+<dd><dl><dt>ValidatorSite, <a class="indexterm" href="ref/ripple__ValidatorSite/_ValidatorSite.html">ValidatorSite::~ValidatorSite</a>
 </dt></dl></dd>
 </dl>
 </div>
 <div class="indexdiv">
 <h3>A</h3>
 <dl>
-<dt id="ientry-idp95476256">accepted</dt>
-<dd><dl><dt>ManifestDisposition, <a class="indexterm" href="ref/ripple__ManifestDisposition.html">ManifestDisposition</a>
-</dt></dl></dd>
-<dt id="ientry-idp95139184">applicable</dt>
+<dt id="ientry-idp75336560">accepted</dt>
+<dd><dl>
+<dt>ListDisposition, <a class="indexterm" href="ref/ripple__ListDisposition.html">ListDisposition</a>
+</dt>
+<dt>ManifestDisposition, <a class="indexterm" href="ref/ripple__ManifestDisposition.html">ManifestDisposition</a>
+</dt>
+</dl></dd>
+<dt id="ientry-idp80481680">applicable</dt>
 <dd><dl><dt>ManifestCache, <a class="indexterm" href="ref/ripple__ManifestCache/applicable.html">ManifestCache::applicable</a>
 </dt></dl></dd>
-<dt id="ientry-idp95155072">applyManifest</dt>
+<dt id="ientry-idp80966128">applyList</dt>
+<dd><dl><dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/applyList.html">ValidatorList::applyList</a>
+</dt></dl></dd>
+<dt id="ientry-idp80497568">applyManifest</dt>
 <dd><dl><dt>ManifestCache, <a class="indexterm" href="ref/ripple__ManifestCache/applyManifest.html">ManifestCache::applyManifest</a>
 </dt></dl></dd>
-<dt id="ientry-idp95191136">apply_mutex_</dt>
+<dt id="ientry-idp80533632">apply_mutex_</dt>
 <dd><dl><dt>ManifestCache, <a class="indexterm" href="ref/ripple__ManifestCache/apply_mutex_.html">ManifestCache::apply_mutex_</a>
 </dt></dl></dd>
 </dl>
@@ -47,21 +57,21 @@
 <div class="indexdiv">
 <h3>C</h3>
 <dl>
-<dt id="ientry-idp95633664">cv_</dt>
-<dd><dl><dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/cv_.html">ValidatorList::cv_</a>
+<dt id="ientry-idp81671344">cv_</dt>
+<dd><dl><dt>ValidatorSite, <a class="indexterm" href="ref/ripple__ValidatorSite/cv_.html">ValidatorSite::cv_</a>
 </dt></dl></dd>
 </dl>
 </div>
 <div class="indexdiv">
 <h3>F</h3>
 <dl>
-<dt id="ientry-idp95646272">fetching_</dt>
-<dd><dl><dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/fetching_.html">ValidatorList::fetching_</a>
+<dt id="ientry-idp81684128">fetching_</dt>
+<dd><dl><dt>ValidatorSite, <a class="indexterm" href="ref/ripple__ValidatorSite/fetching_.html">ValidatorSite::fetching_</a>
 </dt></dl></dd>
-<dt id="ientry-idp95657664">for_each_listed</dt>
+<dt id="ientry-idp81020720">for_each_listed</dt>
 <dd><dl><dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/for_each_listed.html">ValidatorList::for_each_listed</a>
 </dt></dl></dd>
-<dt id="ientry-idp95201168">for_each_manifest</dt>
+<dt id="ientry-idp80543664">for_each_manifest</dt>
 <dd><dl><dt>ManifestCache, <a class="indexterm" href="ref/ripple__ManifestCache/for_each_manifest.html">ManifestCache::for_each_manifest</a>
 </dt></dl></dd>
 </dl>
@@ -69,19 +79,22 @@
 <div class="indexdiv">
 <h3>G</h3>
 <dl>
-<dt id="ientry-idp95689376">getListedKey</dt>
+<dt id="ientry-idp81052320">getListedKey</dt>
 <dd><dl><dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/getListedKey.html">ValidatorList::getListedKey</a>
 </dt></dl></dd>
-<dt id="ientry-idp95295328">getMasterKey</dt>
+<dt id="ientry-idp80637824">getMasterKey</dt>
 <dd><dl><dt>ManifestCache, <a class="indexterm" href="ref/ripple__ManifestCache/getMasterKey.html">ManifestCache::getMasterKey</a>
 </dt></dl></dd>
-<dt id="ientry-idp94935088">getSignature</dt>
+<dt id="ientry-idp80254880">getMasterSignature</dt>
+<dd><dl><dt>Manifest, <a class="indexterm" href="ref/ripple__Manifest/getMasterSignature.html">Manifest::getMasterSignature</a>
+</dt></dl></dd>
+<dt id="ientry-idp80265360">getSignature</dt>
 <dd><dl><dt>Manifest, <a class="indexterm" href="ref/ripple__Manifest/getSignature.html">Manifest::getSignature</a>
 </dt></dl></dd>
-<dt id="ientry-idp95322752">getSigningKey</dt>
+<dt id="ientry-idp80665232">getSigningKey</dt>
 <dd><dl><dt>ManifestCache, <a class="indexterm" href="ref/ripple__ManifestCache/getSigningKey.html">ManifestCache::getSigningKey</a>
 </dt></dl></dd>
-<dt id="ientry-idp95727456">getTrustedKey</dt>
+<dt id="ientry-idp81090336">getTrustedKey</dt>
 <dd><dl><dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/getTrustedKey.html">ValidatorList::getTrustedKey</a>
 </dt></dl></dd>
 </dl>
@@ -89,7 +102,7 @@
 <div class="indexdiv">
 <h3>H</h3>
 <dl>
-<dt id="ientry-idp94944928">hash</dt>
+<dt id="ientry-idp80275200">hash</dt>
 <dd><dl><dt>Manifest, <a class="indexterm" href="ref/ripple__Manifest/hash.html">Manifest::hash</a>
 </dt></dl></dd>
 </dl>
@@ -97,25 +110,31 @@
 <div class="indexdiv">
 <h3>I</h3>
 <dl>
-<dt id="ientry-idp95479280">invalid</dt>
-<dd><dl><dt>ManifestDisposition, <a class="indexterm" href="ref/ripple__ManifestDisposition.html">ManifestDisposition</a>
-</dt></dl></dd>
-<dt id="ientry-idp95765584">io_service_</dt>
-<dd><dl><dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/io_service_.html">ValidatorList::io_service_</a>
+<dt id="ientry-idp75341024">invalid</dt>
+<dd><dl>
+<dt>ListDisposition, <a class="indexterm" href="ref/ripple__ListDisposition.html">ListDisposition</a>
+</dt>
+<dt>ManifestDisposition, <a class="indexterm" href="ref/ripple__ManifestDisposition.html">ManifestDisposition</a>
+</dt>
+</dl></dd>
+<dt id="ientry-idp81698704">io_service_</dt>
+<dd><dl><dt>ValidatorSite, <a class="indexterm" href="ref/ripple__ValidatorSite/io_service_.html">ValidatorSite::io_service_</a>
 </dt></dl></dd>
 </dl>
 </div>
 <div class="indexdiv">
 <h3>J</h3>
 <dl>
-<dt id="ientry-idp95792192">join</dt>
-<dd><dl><dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/join.html">ValidatorList::join</a>
+<dt id="ientry-idp81725520">join</dt>
+<dd><dl><dt>ValidatorSite, <a class="indexterm" href="ref/ripple__ValidatorSite/join.html">ValidatorSite::join</a>
 </dt></dl></dd>
-<dt id="ientry-idp95350400">j_</dt>
+<dt id="ientry-idp80692880">j_</dt>
 <dd><dl>
 <dt>ManifestCache, <a class="indexterm" href="ref/ripple__ManifestCache/j_.html">ManifestCache::j_</a>
 </dt>
 <dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/j_.html">ValidatorList::j_</a>
+</dt>
+<dt>ValidatorSite, <a class="indexterm" href="ref/ripple__ValidatorSite/j_.html">ValidatorSite::j_</a>
 </dt>
 </dl></dd>
 </dl>
@@ -123,7 +142,7 @@
 <div class="indexdiv">
 <h3>K</h3>
 <dl>
-<dt id="ientry-idp95806912">keyListings_</dt>
+<dt id="ientry-idp81140560">keyListings_</dt>
 <dd><dl><dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/keyListings_.html">ValidatorList::keyListings_</a>
 </dt></dl></dd>
 </dl>
@@ -131,20 +150,24 @@
 <div class="indexdiv">
 <h3>L</h3>
 <dl>
-<dt id="ientry-idp96415552">list</dt>
+<dt id="ientry-idp81571840">list</dt>
 <dd><dl><dt>ValidatorList::PublisherList, <a class="indexterm" href="ref/ripple__ValidatorList__PublisherList/list.html">ValidatorList::PublisherList::list</a>
 </dt></dl></dd>
-<dt id="ientry-idp95822656">listed</dt>
+<dt id="ientry-idp75331120">ListDisposition, <a class="indexterm" href="ref/ripple__ListDisposition.html">ListDisposition</a>
+</dt>
+<dt id="ientry-idp81156432">listed</dt>
 <dd><dl><dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/listed.html">ValidatorList::listed</a>
 </dt></dl></dd>
-<dt id="ientry-idp95360112">load</dt>
+<dt id="ientry-idp80702592">load</dt>
 <dd><dl>
 <dt>ManifestCache, <a class="indexterm" href="ref/ripple__ManifestCache/load.html">ManifestCache::load</a>
 </dt>
 <dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/load.html">ValidatorList::load</a>
 </dt>
+<dt>ValidatorSite, <a class="indexterm" href="ref/ripple__ValidatorSite/load.html">ValidatorSite::load</a>
+</dt>
 </dl></dd>
-<dt id="ientry-idp95927760">localPubKey_</dt>
+<dt id="ientry-idp81250640">localPubKey_</dt>
 <dd><dl><dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/localPubKey_.html">ValidatorList::localPubKey_</a>
 </dt></dl></dd>
 </dl>
@@ -152,30 +175,34 @@
 <div class="indexdiv">
 <h3>M</h3>
 <dl>
-<dt id="ientry-idp94954768">make_Manifest</dt>
+<dt id="ientry-idp80285040">make_Manifest</dt>
 <dd><dl><dt>Manifest, <a class="indexterm" href="ref/ripple__Manifest/make_Manifest.html">Manifest::make_Manifest</a>
 </dt></dl></dd>
-<dt id="ientry-idp89888208">Manifest</dt>
+<dt id="ientry-idp80212288">Manifest</dt>
 <dd><dl><dt>Manifest, <a class="indexterm" href="ref/ripple__Manifest/Manifest.html">Manifest::Manifest</a>
 </dt></dl></dd>
-<dt id="ientry-idp95125392">ManifestCache</dt>
+<dt id="ientry-idp80467872">ManifestCache</dt>
 <dd><dl><dt>ManifestCache, <a class="indexterm" href="ref/ripple__ManifestCache/ManifestCache.html">ManifestCache::ManifestCache</a>
 </dt></dl></dd>
-<dt id="ientry-idp95471520">ManifestDisposition, <a class="indexterm" href="ref/ripple__ManifestDisposition.html">ManifestDisposition</a>
+<dt id="ientry-idp80814000">ManifestDisposition, <a class="indexterm" href="ref/ripple__ManifestDisposition.html">ManifestDisposition</a>
 </dt>
-<dt id="ientry-idp95939488">manifests_</dt>
-<dd><dl><dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/manifests_.html">ValidatorList::manifests_</a>
-</dt></dl></dd>
-<dt id="ientry-idp95388240">map_</dt>
+<dt id="ientry-idp81262448">manifests_</dt>
+<dd><dl>
+<dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/manifests_.html">ValidatorList::manifests_</a>
+</dt>
+<dt>ValidatorSite, <a class="indexterm" href="ref/ripple__ValidatorSite/manifests_.html">ValidatorSite::manifests_</a>
+</dt>
+</dl></dd>
+<dt id="ientry-idp80730720">map_</dt>
 <dd><dl><dt>ManifestCache, <a class="indexterm" href="ref/ripple__ManifestCache/map_.html">ManifestCache::map_</a>
 </dt></dl></dd>
-<dt id="ientry-idp94983872">masterKey</dt>
+<dt id="ientry-idp80314144">masterKey</dt>
 <dd><dl><dt>Manifest, <a class="indexterm" href="ref/ripple__Manifest/masterKey.html">Manifest::masterKey</a>
 </dt></dl></dd>
-<dt id="ientry-idp95951984">minimumQuorum_</dt>
+<dt id="ientry-idp81274992">minimumQuorum_</dt>
 <dd><dl><dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/minimumQuorum_.html">ValidatorList::minimumQuorum_</a>
 </dt></dl></dd>
-<dt id="ientry-idp95967728">mutex_</dt>
+<dt id="ientry-idp81290848">mutex_</dt>
 <dd><dl><dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/mutex_.html">ValidatorList::mutex_</a>
 </dt></dl></dd>
 </dl>
@@ -183,55 +210,58 @@
 <div class="indexdiv">
 <h3>N</h3>
 <dl>
-<dt id="ientry-idp96481680">nextRefresh</dt>
-<dd><dl><dt>ValidatorList::Site, <a class="indexterm" href="ref/ripple__ValidatorList__Site/nextRefresh.html">ValidatorList::Site::nextRefresh</a>
+<dt id="ientry-idp82048928">nextRefresh</dt>
+<dd><dl><dt>ValidatorSite::Site, <a class="indexterm" href="ref/ripple__ValidatorSite__Site/nextRefresh.html">ValidatorSite::Site::nextRefresh</a>
 </dt></dl></dd>
 </dl>
 </div>
 <div class="indexdiv">
 <h3>O</h3>
 <dl>
-<dt id="ientry-idp95979952">onConsensusStart</dt>
+<dt id="ientry-idp81303536">onConsensusStart</dt>
 <dd><dl><dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/onConsensusStart.html">ValidatorList::onConsensusStart</a>
 </dt></dl></dd>
-<dt id="ientry-idp96012176">onSiteFetch</dt>
-<dd><dl><dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/onSiteFetch.html">ValidatorList::onSiteFetch</a>
+<dt id="ientry-idp81789488">onSiteFetch</dt>
+<dd><dl><dt>ValidatorSite, <a class="indexterm" href="ref/ripple__ValidatorSite/onSiteFetch.html">ValidatorSite::onSiteFetch</a>
 </dt></dl></dd>
-<dt id="ientry-idp96035744">onTimer</dt>
-<dd><dl><dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/onTimer.html">ValidatorList::onTimer</a>
+<dt id="ientry-idp81812976">onTimer</dt>
+<dd><dl><dt>ValidatorSite, <a class="indexterm" href="ref/ripple__ValidatorSite/onTimer.html">ValidatorSite::onTimer</a>
 </dt></dl></dd>
-<dt id="ientry-idp94992592">operator!=</dt>
+<dt id="ientry-idp80322864">operator!=</dt>
 <dd><dl><dt>Manifest, <a class="indexterm" href="ref/ripple__Manifest/operator_not__eq_.html">Manifest::operator!=</a>
 </dt></dl></dd>
-<dt id="ientry-idp95005696">operator=</dt>
+<dt id="ientry-idp80335888">operator=</dt>
 <dd><dl><dt>Manifest, <a class="indexterm" href="ref/ripple__Manifest/operator_eq_.html">Manifest::operator=</a>
 </dt></dl></dd>
-<dt id="ientry-idp95017152">operator==</dt>
+<dt id="ientry-idp80347344">operator==</dt>
 <dd><dl><dt>Manifest, <a class="indexterm" href="ref/ripple__Manifest/operator_eq__eq_.html">Manifest::operator==</a>
+</dt></dl></dd>
+<dt id="ientry-idp81830624">overlay_</dt>
+<dd><dl><dt>ValidatorSite, <a class="indexterm" href="ref/ripple__ValidatorSite/overlay_.html">ValidatorSite::overlay_</a>
 </dt></dl></dd>
 </dl>
 </div>
 <div class="indexdiv">
 <h3>P</h3>
 <dl>
-<dt id="ientry-idp96053440">pending_</dt>
-<dd><dl><dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/pending_.html">ValidatorList::pending_</a>
+<dt id="ientry-idp81843040">pending_</dt>
+<dd><dl><dt>ValidatorSite, <a class="indexterm" href="ref/ripple__ValidatorSite/pending_.html">ValidatorSite::pending_</a>
 </dt></dl></dd>
-<dt id="ientry-idp96064992">publisherLists_</dt>
+<dt id="ientry-idp81335536">publisherLists_</dt>
 <dd><dl><dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/publisherLists_.html">ValidatorList::publisherLists_</a>
 </dt></dl></dd>
-<dt id="ientry-idp96494416">pUrl</dt>
-<dd><dl><dt>ValidatorList::Site, <a class="indexterm" href="ref/ripple__ValidatorList__Site/pUrl.html">ValidatorList::Site::pUrl</a>
+<dt id="ientry-idp82061776">pUrl</dt>
+<dd><dl><dt>ValidatorSite::Site, <a class="indexterm" href="ref/ripple__ValidatorSite__Site/pUrl.html">ValidatorSite::Site::pUrl</a>
 </dt></dl></dd>
 </dl>
 </div>
 <div class="indexdiv">
 <h3>Q</h3>
 <dl>
-<dt id="ientry-idp96079696">quorum</dt>
+<dt id="ientry-idp81350208">quorum</dt>
 <dd><dl><dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/quorum.html">ValidatorList::quorum</a>
 </dt></dl></dd>
-<dt id="ientry-idp96100896">quorum_</dt>
+<dt id="ientry-idp81371472">quorum_</dt>
 <dd><dl><dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/quorum_.html">ValidatorList::quorum_</a>
 </dt></dl></dd>
 </dl>
@@ -239,20 +269,16 @@
 <div class="indexdiv">
 <h3>R</h3>
 <dl>
-<dt id="ientry-idp95399824">read_mutex_</dt>
-<dd><dl>
-<dt>ManifestCache, <a class="indexterm" href="ref/ripple__ManifestCache/read_mutex_.html">ManifestCache::read_mutex_</a>
-</dt>
-<dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/read_mutex_.html">ValidatorList::read_mutex_</a>
-</dt>
-</dl></dd>
-<dt id="ientry-idp96506000">refreshInterval</dt>
-<dd><dl><dt>ValidatorList::Site, <a class="indexterm" href="ref/ripple__ValidatorList__Site/refreshInterval.html">ValidatorList::Site::refreshInterval</a>
+<dt id="ientry-idp80742304">read_mutex_</dt>
+<dd><dl><dt>ManifestCache, <a class="indexterm" href="ref/ripple__ManifestCache/read_mutex_.html">ManifestCache::read_mutex_</a>
 </dt></dl></dd>
-<dt id="ientry-idp96129152">removePublisher</dt>
+<dt id="ientry-idp82073424">refreshInterval</dt>
+<dd><dl><dt>ValidatorSite::Site, <a class="indexterm" href="ref/ripple__ValidatorSite__Site/refreshInterval.html">ValidatorSite::Site::refreshInterval</a>
+</dt></dl></dd>
+<dt id="ientry-idp81386960">removePublisher</dt>
 <dd><dl><dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/removePublisher.html">ValidatorList::removePublisher</a>
 </dt></dl></dd>
-<dt id="ientry-idp95030176">revoked</dt>
+<dt id="ientry-idp80360448">revoked</dt>
 <dd><dl>
 <dt>Manifest, <a class="indexterm" href="ref/ripple__Manifest/revoked.html">Manifest::revoked</a>
 </dt>
@@ -264,58 +290,71 @@
 <div class="indexdiv">
 <h3>S</h3>
 <dl>
-<dt id="ientry-idp95434656">save</dt>
+<dt id="ientry-idp80777136">save</dt>
 <dd><dl><dt>ManifestCache, <a class="indexterm" href="ref/ripple__ManifestCache/save.html">ManifestCache::save</a>
 </dt></dl></dd>
-<dt id="ientry-idp95041008">sequence</dt>
+<dt id="ientry-idp80371280">sequence</dt>
 <dd><dl>
 <dt>Manifest, <a class="indexterm" href="ref/ripple__Manifest/sequence.html">Manifest::sequence</a>
 </dt>
 <dt>ValidatorList::PublisherList, <a class="indexterm" href="ref/ripple__ValidatorList__PublisherList/sequence.html">ValidatorList::PublisherList::sequence</a>
 </dt>
 </dl></dd>
-<dt id="ientry-idp95050720">serialized</dt>
+<dt id="ientry-idp80380992">serialized</dt>
 <dd><dl><dt>Manifest, <a class="indexterm" href="ref/ripple__Manifest/serialized.html">Manifest::serialized</a>
 </dt></dl></dd>
-<dt id="ientry-idp96162288">setTimer</dt>
-<dd><dl><dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/setTimer.html">ValidatorList::setTimer</a>
+<dt id="ientry-idp81857712">setTimer</dt>
+<dd><dl><dt>ValidatorSite, <a class="indexterm" href="ref/ripple__ValidatorSite/setTimer.html">ValidatorSite::setTimer</a>
 </dt></dl></dd>
-<dt id="ientry-idp95060432">signingKey</dt>
+<dt id="ientry-idp80390704">signingKey</dt>
 <dd><dl><dt>Manifest, <a class="indexterm" href="ref/ripple__Manifest/signingKey.html">Manifest::signingKey</a>
 </dt></dl></dd>
-<dt id="ientry-idp95458672">signingToMasterKeys_</dt>
+<dt id="ientry-idp80801152">signingToMasterKeys_</dt>
 <dd><dl><dt>ManifestCache, <a class="indexterm" href="ref/ripple__ManifestCache/signingToMasterKeys_.html">ManifestCache::signingToMasterKeys_</a>
 </dt></dl></dd>
-<dt id="ientry-idp96174032">sites_</dt>
-<dd><dl><dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/sites_.html">ValidatorList::sites_</a>
+<dt id="ientry-idp81869376">sites_</dt>
+<dd><dl><dt>ValidatorSite, <a class="indexterm" href="ref/ripple__ValidatorSite/sites_.html">ValidatorSite::sites_</a>
 </dt></dl></dd>
-<dt id="ientry-idp95478272">stale</dt>
-<dd><dl><dt>ManifestDisposition, <a class="indexterm" href="ref/ripple__ManifestDisposition.html">ManifestDisposition</a>
+<dt id="ientry-idp81883984">sites_mutex_</dt>
+<dd><dl><dt>ValidatorSite, <a class="indexterm" href="ref/ripple__ValidatorSite/sites_mutex_.html">ValidatorSite::sites_mutex_</a>
 </dt></dl></dd>
-<dt id="ientry-idp96188608">start</dt>
-<dd><dl><dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/start.html">ValidatorList::start</a>
+<dt id="ientry-idp75339920">stale</dt>
+<dd><dl>
+<dt>ListDisposition, <a class="indexterm" href="ref/ripple__ListDisposition.html">ListDisposition</a>
+</dt>
+<dt>ManifestDisposition, <a class="indexterm" href="ref/ripple__ManifestDisposition.html">ManifestDisposition</a>
+</dt>
+</dl></dd>
+<dt id="ientry-idp81896704">start</dt>
+<dd><dl><dt>ValidatorSite, <a class="indexterm" href="ref/ripple__ValidatorSite/start.html">ValidatorSite::start</a>
 </dt></dl></dd>
-<dt id="ientry-idp96203792">stop</dt>
-<dd><dl><dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/stop.html">ValidatorList::stop</a>
+<dt id="ientry-idp81912128">state_mutex_</dt>
+<dd><dl><dt>ValidatorSite, <a class="indexterm" href="ref/ripple__ValidatorSite/state_mutex_.html">ValidatorSite::state_mutex_</a>
 </dt></dl></dd>
-<dt id="ientry-idp96219408">stopping_</dt>
-<dd><dl><dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/stopping_.html">ValidatorList::stopping_</a>
+<dt id="ientry-idp81924880">stop</dt>
+<dd><dl><dt>ValidatorSite, <a class="indexterm" href="ref/ripple__ValidatorSite/stop.html">ValidatorSite::stop</a>
+</dt></dl></dd>
+<dt id="ientry-idp81940288">stopping_</dt>
+<dd><dl><dt>ValidatorSite, <a class="indexterm" href="ref/ripple__ValidatorSite/stopping_.html">ValidatorSite::stopping_</a>
 </dt></dl></dd>
 </dl>
 </div>
 <div class="indexdiv">
 <h3>T</h3>
 <dl>
-<dt id="ientry-idp96231072">timer_</dt>
-<dd><dl><dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/timer_.html">ValidatorList::timer_</a>
+<dt id="ientry-idp80399424">textLength</dt>
+<dd><dl><dt>Manifest, <a class="indexterm" href="ref/ripple__Manifest/textLength.html">Manifest::textLength</a>
 </dt></dl></dd>
-<dt id="ientry-idp96246544">trusted</dt>
+<dt id="ientry-idp81954928">timer_</dt>
+<dd><dl><dt>ValidatorSite, <a class="indexterm" href="ref/ripple__ValidatorSite/timer_.html">ValidatorSite::timer_</a>
+</dt></dl></dd>
+<dt id="ientry-idp81419664">trusted</dt>
 <dd><dl><dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/trusted.html">ValidatorList::trusted</a>
 </dt></dl></dd>
-<dt id="ientry-idp96277344">trustedKeys_</dt>
+<dt id="ientry-idp81450320">trustedKeys_</dt>
 <dd><dl><dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/trustedKeys_.html">ValidatorList::trustedKeys_</a>
 </dt></dl></dd>
-<dt id="ientry-idp96290816">trustedPublisher</dt>
+<dt id="ientry-idp81464080">trustedPublisher</dt>
 <dd><dl><dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/trustedPublisher.html">ValidatorList::trustedPublisher</a>
 </dt></dl></dd>
 </dl>
@@ -323,33 +362,47 @@
 <div class="indexdiv">
 <h3>U</h3>
 <dl>
-<dt id="ientry-idp95477264">untrusted</dt>
-<dd><dl><dt>ManifestDisposition, <a class="indexterm" href="ref/ripple__ManifestDisposition.html">ManifestDisposition</a>
+<dt id="ientry-idp75337712">unsupported_version</dt>
+<dd><dl><dt>ListDisposition, <a class="indexterm" href="ref/ripple__ListDisposition.html">ListDisposition</a>
 </dt></dl></dd>
-<dt id="ientry-idp96519824">uri</dt>
-<dd><dl><dt>ValidatorList::Site, <a class="indexterm" href="ref/ripple__ValidatorList__Site/uri.html">ValidatorList::Site::uri</a>
+<dt id="ientry-idp75338816">untrusted</dt>
+<dd><dl>
+<dt>ListDisposition, <a class="indexterm" href="ref/ripple__ListDisposition.html">ListDisposition</a>
+</dt>
+<dt>ManifestDisposition, <a class="indexterm" href="ref/ripple__ManifestDisposition.html">ManifestDisposition</a>
+</dt>
+</dl></dd>
+<dt id="ientry-idp82087344">uri</dt>
+<dd><dl><dt>ValidatorSite::Site, <a class="indexterm" href="ref/ripple__ValidatorSite__Site/uri.html">ValidatorSite::Site::uri</a>
 </dt></dl></dd>
 </dl>
 </div>
 <div class="indexdiv">
 <h3>V</h3>
 <dl>
-<dt id="ientry-idp95604448">ValidatorList</dt>
+<dt id="ientry-idp80941456">ValidatorList</dt>
 <dd><dl><dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/ValidatorList.html">ValidatorList::ValidatorList</a>
 </dt></dl></dd>
-<dt id="ientry-idp95069152">verify</dt>
-<dd><dl><dt>Manifest, <a class="indexterm" href="ref/ripple__Manifest/verify.html">Manifest::verify</a>
+<dt id="ientry-idp81645344">ValidatorSite</dt>
+<dd><dl><dt>ValidatorSite, <a class="indexterm" href="ref/ripple__ValidatorSite/ValidatorSite.html">ValidatorSite::ValidatorSite</a>
 </dt></dl></dd>
-<dt id="ientry-idp96321856">verifyResponse</dt>
-<dd><dl><dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/verifyResponse.html">ValidatorList::verifyResponse</a>
+<dt id="ientry-idp81970624">validators_</dt>
+<dd><dl><dt>ValidatorSite, <a class="indexterm" href="ref/ripple__ValidatorSite/validators_.html">ValidatorSite::validators_</a>
 </dt></dl></dd>
+<dt id="ientry-idp80411632">verify</dt>
+<dd><dl>
+<dt>Manifest, <a class="indexterm" href="ref/ripple__Manifest/verify.html">Manifest::verify</a>
+</dt>
+<dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/verify.html">ValidatorList::verify</a>
+</dt>
+</dl></dd>
 </dl>
 </div>
 <div class="indexdiv">
 <h3>W</h3>
 <dl>
-<dt id="ientry-idp96355008">work_</dt>
-<dd><dl><dt>ValidatorList, <a class="indexterm" href="ref/ripple__ValidatorList/work_.html">ValidatorList::work_</a>
+<dt id="ientry-idp81983104">work_</dt>
+<dd><dl><dt>ValidatorSite, <a class="indexterm" href="ref/ripple__ValidatorSite/work_.html">ValidatorSite::work_</a>
 </dt></dl></dd>
 </dl>
 </div>
@@ -365,7 +418,7 @@
 </tr></table>
 <hr>
 <div class="spirit-nav">
-<a accesskey="p" href="ref/ripple__ValidatorList__Site/uri.html"><img src="../images/prev.png" alt="Prev"></a><a accesskey="u" href="../index.html"><img src="../images/up.png" alt="Up"></a><a accesskey="h" href="../index.html"><img src="../images/home.png" alt="Home"></a>
+<a accesskey="p" href="ref/ripple__ValidatorSite__Site/uri.html"><img src="../images/prev.png" alt="Prev"></a><a accesskey="u" href="../index.html"><img src="../images/up.png" alt="Up"></a><a accesskey="h" href="../index.html"><img src="../images/home.png" alt="Home"></a>
 </div>
 </body>
 </html>

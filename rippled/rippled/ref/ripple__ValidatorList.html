@@ -61,6 +61,18 @@
 <tr>
 <td>
                 <p>
+                  <a class="link" href="ripple__ValidatorList/applyList.html" title="ValidatorList::applyList"><span class="bold"><strong>applyList</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Apply published list of public keys.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
                   <a class="link" href="ripple__ValidatorList/for_each_listed.html" title="ValidatorList::for_each_listed"><span class="bold"><strong>for_each_listed</strong></span></a>
                 </p>
               </td>
@@ -97,18 +109,6 @@
 <tr>
 <td>
                 <p>
-                  <a class="link" href="ripple__ValidatorList/join.html" title="ValidatorList::join"><span class="bold"><strong>join</strong></span></a>
-                </p>
-              </td>
-<td>
-                <p>
-                  Wait for current fetches from sites to complete.
-                </p>
-              </td>
-</tr>
-<tr>
-<td>
-                <p>
                   <a class="link" href="ripple__ValidatorList/listed.html" title="ValidatorList::listed"><span class="bold"><strong>listed</strong></span></a>
                 </p>
               </td>
@@ -126,7 +126,7 @@
               </td>
 <td>
                 <p>
-                  Load configured site URIs and trusted keys.
+                  Load configured trusted keys.
                 </p>
               </td>
 </tr>
@@ -163,30 +163,6 @@
 <td>
                 <p>
                   Stop trusting lists signed by publisher's public key.
-                </p>
-              </td>
-</tr>
-<tr>
-<td>
-                <p>
-                  <a class="link" href="ripple__ValidatorList/start.html" title="ValidatorList::start"><span class="bold"><strong>start</strong></span></a>
-                </p>
-              </td>
-<td>
-                <p>
-                  Start fetching lists from sites.
-                </p>
-              </td>
-</tr>
-<tr>
-<td>
-                <p>
-                  <a class="link" href="ripple__ValidatorList/stop.html" title="ValidatorList::stop"><span class="bold"><strong>stop</strong></span></a>
-                </p>
-              </td>
-<td>
-                <p>
-                  Stop fetching lists from sites.
                 </p>
               </td>
 </tr>
@@ -237,9 +213,8 @@
 <p>
         This class manages the set of validation public keys the local rippled node
         trusts. The list of trusted keys is populated using the keys listed in the
-        configuration file as well as remote sites that serve lists of keys recommended
-        by trusted publishers. The site URIs and trusted publisher public keys are
-        specified in the config.
+        configuration file as well as lists signed by trusted publishers. The trusted
+        publisher public keys are specified in the config.
       </p>
 <p>
         The validator lists from the remote sites are fetched at a regular interval.
@@ -270,10 +245,6 @@
 <li class="listitem">
             <code class="computeroutput"><span class="string">"version"</span></code>: 1
           </li>
-<li class="listitem">
-            <code class="computeroutput"><span class="string">"refreshInterval"</span></code>:
-            (optional) recommended fetch interval in minutes
-          </li>
 </ul></div>
 <p>
         Individual validator lists are stored separately by publisher. The number
@@ -281,8 +252,8 @@
       </p>
 <p>
         The list of trusted validation public keys is reset at the start of each
-        consensus round to take into account the latest fetched lists as well as
-        the set of validators from whom validations are being received. Listed validation
+        consensus round to take into account the latest known lists as well as the
+        set of validators from whom validations are being received. Listed validation
         public keys are shuffled and then sorted by the number of lists they appear
         on. (The shuffling makes the order/rank of validators with the same number
         of listings non-deterministic.) If there is only one list, all listed keys
