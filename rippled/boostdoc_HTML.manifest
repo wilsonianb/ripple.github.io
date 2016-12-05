@@ -66,16 +66,14 @@ rippled/ref/ripple__ValidatorList__PublisherList/list.html
 rippled/ref/ripple__ValidatorList__PublisherList/sequence.html
 rippled/ref/ripple__ValidatorSite.html
 rippled/ref/ripple__ValidatorSite/ValidatorSite.html
+rippled/ref/ripple__ValidatorSite/app_.html
 rippled/ref/ripple__ValidatorSite/cv_.html
 rippled/ref/ripple__ValidatorSite/fetching_.html
-rippled/ref/ripple__ValidatorSite/io_service_.html
 rippled/ref/ripple__ValidatorSite/j_.html
 rippled/ref/ripple__ValidatorSite/join.html
 rippled/ref/ripple__ValidatorSite/load.html
-rippled/ref/ripple__ValidatorSite/manifests_.html
 rippled/ref/ripple__ValidatorSite/onSiteFetch.html
 rippled/ref/ripple__ValidatorSite/onTimer.html
-rippled/ref/ripple__ValidatorSite/overlay_.html
 rippled/ref/ripple__ValidatorSite/pending_.html
 rippled/ref/ripple__ValidatorSite/setTimer.html
 rippled/ref/ripple__ValidatorSite/sites_.html
@@ -85,7 +83,6 @@ rippled/ref/ripple__ValidatorSite/state_mutex_.html
 rippled/ref/ripple__ValidatorSite/stop.html
 rippled/ref/ripple__ValidatorSite/stopping_.html
 rippled/ref/ripple__ValidatorSite/timer_.html
-rippled/ref/ripple__ValidatorSite/validators_.html
 rippled/ref/ripple__ValidatorSite/work_.html
 rippled/ref/ripple__ValidatorSite/_ValidatorSite.html
 rippled/ref/ripple__ValidatorSite__Site.html

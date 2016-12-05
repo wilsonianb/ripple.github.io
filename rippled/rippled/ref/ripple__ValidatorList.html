@@ -217,25 +217,16 @@
         publisher public keys are specified in the config.
       </p>
 <p>
-        The validator lists from the remote sites are fetched at a regular interval.
-        Fetched lists are expected to be in JSON format and contain the following
-        fields:
+        New lists are expected to include the following data:
       </p>
 <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
-<li class="listitem">
-            <code class="computeroutput"><span class="string">"manifest"</span></code>: Base64-encoded
-            serialization of a manifest containing the publisher's master and signing
-            public keys. This has the same format as the <code class="computeroutput"><span class="identifier">validation_manifest</span></code>
-            config section.
-          </li>
 <li class="listitem">
             <code class="computeroutput"><span class="string">"blob"</span></code>: Base64-encoded
             JSON string containing a <code class="computeroutput"><span class="string">"sequence"</span></code>
             and <code class="computeroutput"><span class="string">"validators"</span></code>
             field. <code class="computeroutput"><span class="string">"validators"</span></code>
-            contains an array of objects with <code class="computeroutput"><span class="string">"validation_public_key"</span></code>
-            and <code class="computeroutput"><span class="string">"manifest"</span></code>
-            fields. <code class="computeroutput"><span class="string">"validation_public_key"</span></code>
+            contains an array of objects with a <code class="computeroutput"><span class="string">"validation_public_key"</span></code>
+            field. <code class="computeroutput"><span class="string">"validation_public_key"</span></code>
             should be the master public key.
           </li>
 <li class="listitem">

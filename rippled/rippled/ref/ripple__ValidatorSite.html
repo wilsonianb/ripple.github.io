@@ -17,6 +17,9 @@
 <div class="titlepage"><div><div><h3 class="title">
 <a name="rippled.ref.ripple__ValidatorSite"></a><a class="link" href="ripple__ValidatorSite.html" title="ValidatorSite">ValidatorSite</a>
 </h3></div></div></div>
+<p>
+        Validator Sites
+      </p>
 <h5>
 <a name="rippled.ref.ripple__ValidatorSite.h0"></a>
         <span class="phrase"><a name="rippled.ref.ripple__ValidatorSite.synopsis"></a></span><a class="link" href="ripple__ValidatorSite.html#rippled.ref.ripple__ValidatorSite.synopsis">Synopsis</a>
@@ -118,6 +121,43 @@
 <a name="rippled.ref.ripple__ValidatorSite.h2"></a>
         <span class="phrase"><a name="rippled.ref.ripple__ValidatorSite.description"></a></span><a class="link" href="ripple__ValidatorSite.html#rippled.ref.ripple__ValidatorSite.description">Description</a>
       </h5>
+<p>
+        This class manages the set of configured remote sites used to fetch the latest
+        published recommended validator lists.
+      </p>
+<p>
+        Lists are fetched at a regular interval. Fetched lists are expected to be
+        in JSON format and contain the following fields:
+      </p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem">
+            <code class="computeroutput"><span class="string">"manifest"</span></code>: Base64-encoded
+            serialization of a manifest containing the publisher's master and signing
+            public keys. This has the same format as the <code class="computeroutput"><span class="identifier">validation_manifest</span></code>
+            config section.
+          </li>
+<li class="listitem">
+            <code class="computeroutput"><span class="string">"blob"</span></code>: Base64-encoded
+            JSON string containing a <code class="computeroutput"><span class="string">"sequence"</span></code>
+            and <code class="computeroutput"><span class="string">"validators"</span></code>
+            field. <code class="computeroutput"><span class="string">"validators"</span></code>
+            contains an array of objects with <code class="computeroutput"><span class="string">"validation_public_key"</span></code>
+            and <code class="computeroutput"><span class="string">"manifest"</span></code>
+            fields. <code class="computeroutput"><span class="string">"validation_public_key"</span></code>
+            should be the master public key.
+          </li>
+<li class="listitem">
+            <code class="computeroutput"><span class="string">"signature"</span></code>: Hex-encoded
+            signature of the blob using the publisher's signing key.
+          </li>
+<li class="listitem">
+            <code class="computeroutput"><span class="string">"version"</span></code>: 1
+          </li>
+<li class="listitem">
+            <code class="computeroutput"><span class="string">"refreshInterval"</span></code>
+            (optional)
+          </li>
+</ul></div>
 <h5>
 <a name="rippled.ref.ripple__ValidatorSite.h3"></a>
         <span class="phrase"><a name="rippled.ref.ripple__ValidatorSite.header"></a></span><a class="link" href="ripple__ValidatorSite.html#rippled.ref.ripple__ValidatorSite.header">Header</a>
