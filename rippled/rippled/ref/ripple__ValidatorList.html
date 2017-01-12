@@ -157,18 +157,6 @@
 <tr>
 <td>
                 <p>
-                  <a class="link" href="ripple__ValidatorList/removePublisher.html" title="ValidatorList::removePublisher"><span class="bold"><strong>removePublisher</strong></span></a>
-                </p>
-              </td>
-<td>
-                <p>
-                  Stop trusting lists signed by publisher's public key.
-                </p>
-              </td>
-</tr>
-<tr>
-<td>
-                <p>
                   <a class="link" href="ripple__ValidatorList/trusted.html" title="ValidatorList::trusted"><span class="bold"><strong>trusted</strong></span></a>
                 </p>
               </td>
@@ -222,16 +210,24 @@
 <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
 <li class="listitem">
             <code class="computeroutput"><span class="string">"blob"</span></code>: Base64-encoded
-            JSON string containing a <code class="computeroutput"><span class="string">"sequence"</span></code>
-            and <code class="computeroutput"><span class="string">"validators"</span></code>
-            field. <code class="computeroutput"><span class="string">"validators"</span></code>
+            JSON string containing a <code class="computeroutput"><span class="string">"sequence"</span></code>,
+            <code class="computeroutput"><span class="string">"expiration"</span></code>, and
+            <code class="computeroutput"><span class="string">"validators"</span></code> field.
+            <code class="computeroutput"><span class="string">"expiration"</span></code> contains
+            the Ripple timestamp (seconds since January 1st, 2000 (00:00 UTC)) for
+            when the list expires. <code class="computeroutput"><span class="string">"validators"</span></code>
             contains an array of objects with a <code class="computeroutput"><span class="string">"validation_public_key"</span></code>
             field. <code class="computeroutput"><span class="string">"validation_public_key"</span></code>
-            should be the master public key.
+            should be the hex-encoded master public key.
           </li>
 <li class="listitem">
             <code class="computeroutput"><span class="string">"signature"</span></code>: Hex-encoded
             signature of the blob using the publisher's signing key.
+          </li>
+<li class="listitem">
+            <code class="computeroutput"><span class="string">"public_key"</span></code>: Hex-encoded
+            publisher public key. Ed25519 public keys are expected to be preceded
+            with 0xed.
           </li>
 <li class="listitem">
             <code class="computeroutput"><span class="string">"version"</span></code>: 1

@@ -55,13 +55,15 @@ rippled/ref/ripple__ValidatorList/onConsensusStart.html
 rippled/ref/ripple__ValidatorList/publisherLists_.html
 rippled/ref/ripple__ValidatorList/quorum.html
 rippled/ref/ripple__ValidatorList/quorum_.html
-rippled/ref/ripple__ValidatorList/removePublisher.html
+rippled/ref/ripple__ValidatorList/removePublisherList.html
+rippled/ref/ripple__ValidatorList/timeKeeper_.html
 rippled/ref/ripple__ValidatorList/trusted.html
 rippled/ref/ripple__ValidatorList/trustedKeys_.html
 rippled/ref/ripple__ValidatorList/trustedPublisher.html
 rippled/ref/ripple__ValidatorList/verify.html
 rippled/ref/ripple__ValidatorList/_ValidatorList.html
 rippled/ref/ripple__ValidatorList__PublisherList.html
+rippled/ref/ripple__ValidatorList__PublisherList/expiration.html
 rippled/ref/ripple__ValidatorList__PublisherList/list.html
 rippled/ref/ripple__ValidatorList__PublisherList/sequence.html
 rippled/ref/ripple__ValidatorSite.html
