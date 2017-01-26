@@ -221,13 +221,13 @@
             should be the hex-encoded master public key.
           </li>
 <li class="listitem">
-            <code class="computeroutput"><span class="string">"signature"</span></code>: Hex-encoded
-            signature of the blob using the publisher's signing key.
+            <code class="computeroutput"><span class="string">"manifest"</span></code>: Base64-encoded
+            serialization of a manifest containing the publisher's master and signing
+            public keys.
           </li>
 <li class="listitem">
-            <code class="computeroutput"><span class="string">"public_key"</span></code>: Hex-encoded
-            publisher public key. Ed25519 public keys are expected to be preceded
-            with 0xed.
+            <code class="computeroutput"><span class="string">"signature"</span></code>: Hex-encoded
+            signature of the blob using the publisher's signing key.
           </li>
 <li class="listitem">
             <code class="computeroutput"><span class="string">"version"</span></code>: 1
@@ -243,10 +243,9 @@
         set of validators from whom validations are being received. Listed validation
         public keys are shuffled and then sorted by the number of lists they appear
         on. (The shuffling makes the order/rank of validators with the same number
-        of listings non-deterministic.) If there is only one list, all listed keys
-        are trusted. Otherwise, the trusted list size is set to 80% of the median
-        list length. Finally, a quorum value is calculated for the new trusted validator
-        list.
+        of listings non-deterministic.) A quorum value is calculated for the new
+        trusted validator list. If there is only one list, all listed keys are trusted.
+        Otherwise, the trusted list size is set to 125% of the quorum.
       </p>
 <h5>
 <a name="rippled.ref.ripple__ValidatorList.h3"></a>

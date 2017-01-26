@@ -143,13 +143,13 @@
             should be the hex-encoded master public key.
           </li>
 <li class="listitem">
-            <code class="computeroutput"><span class="string">"signature"</span></code>: Hex-encoded
-            signature of the blob using the publisher's signing key.
+            <code class="computeroutput"><span class="string">"manifest"</span></code>: Base64-encoded
+            serialization of a manifest containing the publisher's master and signing
+            public keys.
           </li>
 <li class="listitem">
-            <code class="computeroutput"><span class="string">"public_key"</span></code>: Hex-encoded
-            publisher public key. Ed25519 public keys are expected to be preceded
-            with 0xed.
+            <code class="computeroutput"><span class="string">"signature"</span></code>: Hex-encoded
+            signature of the blob using the publisher's signing key.
           </li>
 <li class="listitem">
             <code class="computeroutput"><span class="string">"version"</span></code>: 1

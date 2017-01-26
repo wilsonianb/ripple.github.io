@@ -18,7 +18,7 @@
 <a name="rippled.ref.ripple__ValidatorList.load"></a><a class="link" href="load.html" title="ValidatorList::load">ValidatorList::load</a>
 </h4></div></div></div>
 <p>
-          <a class="indexterm" name="idp101152000"></a>
+          <a class="indexterm" name="idp97244576"></a>
 Load configured trusted keys.
         </p>
 <h6>
@@ -29,8 +29,7 @@ Load configured trusted keys.
 <span class="identifier">load</span><span class="special">(</span>
     <span class="identifier">PublicKey</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">localSigningKey</span><span class="special">,</span>
     <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">string</span> <span class="special">&gt;</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">configKeys</span><span class="special">,</span>
-    <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">string</span> <span class="special">&gt;</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">publisherKeys</span><span class="special">,</span>
-    <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">string</span> <span class="special">&gt;</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">configManifest</span><span class="special">);</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">string</span> <span class="special">&gt;</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">publisherKeys</span><span class="special">);</span>
 </pre>
 <h6>
 <a name="rippled.ref.ripple__ValidatorList.load.h1"></a>
@@ -93,18 +92,6 @@ Load configured trusted keys.
                   <p>
                     List of trusted publisher public keys. Each entry contains a
                     base58 encoded account public key.
-                  </p>
-                </td>
-</tr>
-<tr>
-<td>
-                  <p>
-                    <code class="computeroutput"><span class="identifier">configManifest</span></code>
-                  </p>
-                </td>
-<td>
-                  <p>
-                    Base64 encoded manifest for local node's signing public key
                   </p>
                 </td>
 </tr>

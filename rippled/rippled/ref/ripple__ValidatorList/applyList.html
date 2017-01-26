@@ -18,7 +18,7 @@
 <a name="rippled.ref.ripple__ValidatorList.applyList"></a><a class="link" href="applyList.html" title="ValidatorList::applyList">ValidatorList::applyList</a>
 </h4></div></div></div>
 <p>
-          <a class="indexterm" name="idp100931056"></a>
+          <a class="indexterm" name="idp97022176"></a>
 Apply published list of public keys.
         </p>
 <h6>
@@ -27,7 +27,7 @@ Apply published list of public keys.
         </h6>
 <pre class="programlisting"><span class="identifier">ListDisposition</span>
 <span class="identifier">applyList</span><span class="special">(</span>
-    <span class="identifier">PublicKey</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">pubKey</span><span class="special">,</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">string</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">manifest</span><span class="special">,</span>
     <span class="identifier">std</span><span class="special">::</span><span class="identifier">string</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">blob</span><span class="special">,</span>
     <span class="identifier">std</span><span class="special">::</span><span class="identifier">string</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">signature</span><span class="special">,</span>
     <span class="identifier">std</span><span class="special">::</span><span class="identifier">uint32_t</span> <span class="identifier">version</span><span class="special">);</span>
@@ -61,12 +61,12 @@ Apply published list of public keys.
 <tr>
 <td>
                   <p>
-                    <code class="computeroutput"><span class="identifier">pubKey</span></code>
+                    <code class="computeroutput"><span class="identifier">manifest</span></code>
                   </p>
                 </td>
 <td>
                   <p>
-                    Publisher master public key
+                    base64-encoded publisher key manifest
                   </p>
                 </td>
 </tr>

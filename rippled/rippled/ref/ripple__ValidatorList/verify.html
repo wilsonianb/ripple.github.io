@@ -6,19 +6,19 @@
 <meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="../../../index.html" title="rippled">
 <link rel="up" href="../ripple__ValidatorList.html" title="ValidatorList">
-<link rel="prev" href="trustedPublisher.html" title="ValidatorList::trustedPublisher">
+<link rel="prev" href="validatorManifests_.html" title="ValidatorList::validatorManifests_">
 <link rel="next" href="_ValidatorList.html" title="ValidatorList::~ValidatorList">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
 <div class="spirit-nav">
-<a accesskey="p" href="trustedPublisher.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__ValidatorList.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="_ValidatorList.html"><img src="../../../images/next.png" alt="Next"></a>
+<a accesskey="p" href="validatorManifests_.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__ValidatorList.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="_ValidatorList.html"><img src="../../../images/next.png" alt="Next"></a>
 </div>
 <div class="section">
 <div class="titlepage"><div><div><h4 class="title">
 <a name="rippled.ref.ripple__ValidatorList.verify"></a><a class="link" href="verify.html" title="ValidatorList::verify">ValidatorList::verify</a>
 </h4></div></div></div>
 <p>
-          <a class="indexterm" name="idp101472720"></a>
+          <a class="indexterm" name="idp97567184"></a>
 Check response for trusted valid published list.
         </p>
 <h6>
@@ -28,7 +28,8 @@ Check response for trusted valid published list.
 <pre class="programlisting"><span class="identifier">ListDisposition</span>
 <span class="identifier">verify</span><span class="special">(</span>
     <span class="identifier">Json</span><span class="special">::</span><span class="identifier">Value</span><span class="special">&amp;</span> <span class="identifier">list</span><span class="special">,</span>
-    <span class="identifier">PublicKey</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">pubKey</span><span class="special">,</span>
+    <span class="identifier">PublicKey</span><span class="special">&amp;</span> <span class="identifier">pubKey</span><span class="special">,</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">string</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">manifest</span><span class="special">,</span>
     <span class="identifier">std</span><span class="special">::</span><span class="identifier">string</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">blob</span><span class="special">,</span>
     <span class="identifier">std</span><span class="special">::</span><span class="identifier">string</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">signature</span><span class="special">);</span>
 </pre>
@@ -44,6 +45,14 @@ Check response for trusted valid published list.
 <p>
           <code class="computeroutput"><span class="identifier">ListDisposition</span><span class="special">::</span><span class="identifier">accepted</span></code> if list can be applied
         </p>
+<h6>
+<a name="rippled.ref.ripple__ValidatorList.verify.h3"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__ValidatorList.verify.thread_safety"></a></span><a class="link" href="verify.html#rippled.ref.ripple__ValidatorList.verify.thread_safety">Thread
+          Safety</a>
+        </h6>
+<p>
+          Calling public member function is expected to lock mutex
+        </p>
 </div>
 <table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
 <td align="left"></td>
@@ -54,7 +63,7 @@ Check response for trusted valid published list.
 </tr></table>
 <hr>
 <div class="spirit-nav">
-<a accesskey="p" href="trustedPublisher.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__ValidatorList.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="_ValidatorList.html"><img src="../../../images/next.png" alt="Next"></a>
+<a accesskey="p" href="validatorManifests_.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__ValidatorList.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="_ValidatorList.html"><img src="../../../images/next.png" alt="Next"></a>
 </div>
 </body>
 </html>

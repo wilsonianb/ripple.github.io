@@ -21,7 +21,6 @@ rippled/ref/ripple__Manifest/textLength.html
 rippled/ref/ripple__Manifest/verify.html
 rippled/ref/ripple__ManifestCache.html
 rippled/ref/ripple__ManifestCache/ManifestCache.html
-rippled/ref/ripple__ManifestCache/applicable.html
 rippled/ref/ripple__ManifestCache/applyManifest.html
 rippled/ref/ripple__ManifestCache/apply_mutex_.html
 rippled/ref/ripple__ManifestCache/for_each_manifest.html
@@ -31,6 +30,8 @@ rippled/ref/ripple__ManifestCache/getMasterKey.html
 rippled/ref/ripple__ManifestCache/getSigningKey.html
 rippled/ref/ripple__ManifestCache/j_.html
 rippled/ref/ripple__ManifestCache/load.html
+rippled/ref/ripple__ManifestCache/load/overload1.html
+rippled/ref/ripple__ManifestCache/load/overload2.html
 rippled/ref/ripple__ManifestCache/map_.html
 rippled/ref/ripple__ManifestCache/read_mutex_.html
 rippled/ref/ripple__ManifestCache/revoked.html
@@ -48,11 +49,11 @@ rippled/ref/ripple__ValidatorList/keyListings_.html
 rippled/ref/ripple__ValidatorList/listed.html
 rippled/ref/ripple__ValidatorList/load.html
 rippled/ref/ripple__ValidatorList/localPubKey_.html
-rippled/ref/ripple__ValidatorList/manifests_.html
 rippled/ref/ripple__ValidatorList/minimumQuorum_.html
 rippled/ref/ripple__ValidatorList/mutex_.html
 rippled/ref/ripple__ValidatorList/onConsensusStart.html
 rippled/ref/ripple__ValidatorList/publisherLists_.html
+rippled/ref/ripple__ValidatorList/publisherManifests_.html
 rippled/ref/ripple__ValidatorList/quorum.html
 rippled/ref/ripple__ValidatorList/quorum_.html
 rippled/ref/ripple__ValidatorList/removePublisherList.html
@@ -60,6 +61,7 @@ rippled/ref/ripple__ValidatorList/timeKeeper_.html
 rippled/ref/ripple__ValidatorList/trusted.html
 rippled/ref/ripple__ValidatorList/trustedKeys_.html
 rippled/ref/ripple__ValidatorList/trustedPublisher.html
+rippled/ref/ripple__ValidatorList/validatorManifests_.html
 rippled/ref/ripple__ValidatorList/verify.html
 rippled/ref/ripple__ValidatorList/_ValidatorList.html
 rippled/ref/ripple__ValidatorList__PublisherList.html

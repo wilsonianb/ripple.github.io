@@ -18,7 +18,7 @@
 <a name="rippled.ref.ripple__ManifestCache.save"></a><a class="link" href="save.html" title="ManifestCache::save">ManifestCache::save</a>
 </h4></div></div></div>
 <p>
-          <a class="indexterm" name="idp100742608"></a>
+          <a class="indexterm" name="idp96808704"></a>
 Save cached manifests to database.
         </p>
 <h6>
@@ -27,7 +27,9 @@ Save cached manifests to database.
         </h6>
 <pre class="programlisting"><span class="keyword">void</span>
 <span class="identifier">save</span><span class="special">(</span>
-    <span class="identifier">DatabaseCon</span><span class="special">&amp;</span> <span class="identifier">dbCon</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+    <span class="identifier">DatabaseCon</span><span class="special">&amp;</span> <span class="identifier">dbCon</span><span class="special">,</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">string</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">dbTable</span><span class="special">,</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">function</span><span class="special">&lt;</span> <span class="keyword">bool</span><span class="special">(</span><span class="identifier">PublicKey</span> <span class="keyword">const</span> <span class="special">&amp;)&gt;</span> <span class="identifier">isTrusted</span><span class="special">);</span>
 </pre>
 <h6>
 <a name="rippled.ref.ripple__ManifestCache.save.h1"></a>
@@ -54,7 +56,8 @@ Save cached manifests to database.
                   </p>
                 </th>
 </tr></thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>
                   <p>
                     <code class="computeroutput"><span class="identifier">dbCon</span></code>
@@ -66,7 +69,20 @@ Save cached manifests to database.
                     table
                   </p>
                 </td>
-</tr></tbody>
+</tr>
+<tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">isTrusted</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    Function that returns true if manifest is trusted
+                  </p>
+                </td>
+</tr>
+</tbody>
 </table></div>
 <h6>
 <a name="rippled.ref.ripple__ManifestCache.save.h3"></a>
